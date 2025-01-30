@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8sj5oo7bwwi3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Purple background" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 164.0
+offset_top = 125.0
+offset_right = 964.0
+offset_bottom = 465.0
+color = Color(0.4, 0.176471, 0.568627, 1)
+
+[node name="Text" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+clip_contents = true
+custom_minimum_size = Vector2(50, 25)
+layout_mode = 0
+offset_left = 166.0
+offset_top = 66.0
+offset_right = 566.0
+offset_bottom = 91.0
+scale = Vector2(2, 2)
+text = "Simon Signs____"
+horizontal_alignment = 1
+
+[node name="Input field bg" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 163.0
+offset_top = 476.0
+offset_right = 962.0
+offset_bottom = 565.0
+color = Color(0.937255, 0.396078, 0.521569, 1)
+
+[node name="Input field" type="LineEdit" parent="Input field bg"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 2.0
+offset_right = 799.0
+offset_bottom = 89.0
+theme_override_colors/selection_color = Color(1, 0.192157, 0.192157, 1)
+theme_override_colors/font_placeholder_color = Color(0.996078, 0.976471, 0.976471, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_x3w1j")
+placeholder_text = "Type your answer here"
+alignment = 1
