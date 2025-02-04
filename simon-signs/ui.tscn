@@ -1,11 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8sj5oo7bwwi3"]
-
-[ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_r5vhp"]
-[ext_resource type="Texture2D" uid="uid://dv126r7f46hq6" path="res://Assets/pause_menu_icon.png" id="1_r58be"]
-; [gd_scene load_steps=6 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=8 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
+[ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_r5vhp"]
+[ext_resource type="Texture2D" uid="uid://dv126r7f46hq6" path="res://Assets/pause_menu_icon.png" id="1_r58be"]
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
 
@@ -30,34 +28,6 @@ offset_right = 964.0
 offset_bottom = 465.0
 color = Color(0.4, 0.176471, 0.568627, 1)
 
-[node name="MenuButton" type="MenuButton" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.033
-anchor_right = -0.033
-offset_left = 1069.02
-offset_top = 40.0
-offset_right = 1134.02
-offset_bottom = 88.0
-theme_override_icons/icon = ExtResource("1_r58be")
-toggle_mode = false
-
-[node name="Text" type="Label" parent="."]
-;[node name="Text" type="Label" parent="UI"]
-modulate = Color(0, 0, 0, 1)
-clip_contents = true
-custom_minimum_size = Vector2(50, 25)
-layout_mode = 0
-offset_left = 166.0
-offset_top = 67.0
-offset_right = 566.0
-offset_bottom = 92.0
-scale = Vector2(2, 2)
-theme_override_fonts/font = ExtResource("1_r5vhp")
-theme_override_font_sizes/font_size = 22
-text = "Simon Signs____"
-horizontal_alignment = 1
-
 [node name="Input field bg" type="ColorRect" parent="UI"]
 layout_mode = 0
 offset_left = 163.0
@@ -78,6 +48,31 @@ theme_override_fonts/font = ExtResource("1_r5vhp")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x3w1j")
 placeholder_text = "Type your answer here"
 alignment = 1
+
+[node name="MenuButton" type="MenuButton" parent="."]
+anchors_preset = -1
+anchor_left = -0.033
+anchor_right = -0.033
+offset_left = 1069.02
+offset_top = 40.0
+offset_right = 1134.02
+offset_bottom = 88.0
+theme_override_icons/icon = ExtResource("1_r58be")
+toggle_mode = false
+
+[node name="Text" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+clip_contents = true
+custom_minimum_size = Vector2(50, 25)
+offset_left = 166.0
+offset_top = 67.0
+offset_right = 566.0
+offset_bottom = 92.0
+scale = Vector2(2, 2)
+theme_override_fonts/font = ExtResource("1_r5vhp")
+theme_override_font_sizes/font_size = 22
+text = "Simon Signs____"
+horizontal_alignment = 1
 
 [node name="Question" type="Node" parent="."]
 script = ExtResource("3_o7jq0")
