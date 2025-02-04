@@ -1,8 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=6 format=3 uid="uid://b8sj5oo7bwwi3"]
+
+[ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
+[ext_resource type="Script" path="res://main.gd" id="1_myw06"]
+[ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
+[ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
-[node name="UI" type="Control"]
+[node name="Main" type="Node"]
+script = ExtResource("1_myw06")
+
+[node name="UI" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,7 +18,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Purple background" type="ColorRect" parent="."]
+[node name="Purple background" type="ColorRect" parent="UI"]
 layout_mode = 0
 offset_left = 164.0
 offset_top = 125.0
@@ -18,7 +26,7 @@ offset_right = 964.0
 offset_bottom = 465.0
 color = Color(0.4, 0.176471, 0.568627, 1)
 
-[node name="Text" type="Label" parent="."]
+[node name="Text" type="Label" parent="UI"]
 modulate = Color(0, 0, 0, 1)
 clip_contents = true
 custom_minimum_size = Vector2(50, 25)
@@ -31,7 +39,7 @@ scale = Vector2(2, 2)
 text = "Simon Signs____"
 horizontal_alignment = 1
 
-[node name="Input field bg" type="ColorRect" parent="."]
+[node name="Input field bg" type="ColorRect" parent="UI"]
 layout_mode = 0
 offset_left = 163.0
 offset_top = 476.0
@@ -39,7 +47,7 @@ offset_right = 962.0
 offset_bottom = 565.0
 color = Color(0.937255, 0.396078, 0.521569, 1)
 
-[node name="Input field" type="LineEdit" parent="Input field bg"]
+[node name="Input field" type="LineEdit" parent="UI/Input field bg"]
 layout_mode = 0
 offset_left = -1.0
 offset_top = 2.0
@@ -50,3 +58,26 @@ theme_override_colors/font_placeholder_color = Color(0.996078, 0.976471, 0.97647
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x3w1j")
 placeholder_text = "Type your answer here"
 alignment = 1
+
+[node name="Question" type="Node" parent="."]
+script = ExtResource("3_o7jq0")
+
+[node name="QuestionList" type="Node" parent="Question"]
+script = ExtResource("1_eqeli")
+
+[node name="QDisplay" type="RichTextLabel" parent="Question"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -344.0
+offset_top = -232.0
+offset_right = 319.0
+offset_bottom = 192.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_uusxv")
+theme_override_font_sizes/normal_font_size = 400
+bbcode_enabled = true
+scroll_active = false
