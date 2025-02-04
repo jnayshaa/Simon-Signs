@@ -15,7 +15,8 @@ func _process(delta):
 	pass
 	
 func _get_new_question():
-	prompt_text = $QuestionList.get_prompt
+	prompt_text = QuestionList.get_prompt()
+	prompt.parse_bbcode(set_center_tags(prompt_text))
 	
 func set_center_tags(string_to_center: String):
 	return "[center]" + string_to_center + "[/center]"
