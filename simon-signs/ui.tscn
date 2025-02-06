@@ -1,15 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=10 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
+[ext_resource type="Texture2D" uid="uid://56ny5ronvt57" path="res://Assets/coins.png" id="1_ovvsn"]
 [ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_r5vhp"]
 [ext_resource type="Texture2D" uid="uid://dv126r7f46hq6" path="res://Assets/pause_menu_icon.png" id="1_r58be"]
+[ext_resource type="Script" path="res://coin_counter.gd" id="2_d616f"]
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
-; [gd_scene load_steps=4 format=3 uid="uid://r633jofxladq"]
-
-[ext_resource type="Texture2D" uid="uid://56ny5ronvt57" path="res://Assets/coins.png" id="1_ovvsn"]
-[ext_resource type="Script" path="res://coin_counter.gd" id="2_d616f"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -90,21 +88,22 @@ script = ExtResource("3_o7jq0")
 script = ExtResource("1_eqeli")
 
 [node name="QDisplay" type="RichTextLabel" parent="Question"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -344.0
-offset_top = -232.0
-offset_right = 319.0
-offset_bottom = 192.0
+anchors_preset = -1
+anchor_left = 0.494
+anchor_top = 0.423
+anchor_right = 0.494
+anchor_bottom = 0.423
+offset_left = -336.088
+offset_top = -179.104
+offset_right = 335.912
+offset_bottom = 182.896
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_uusxv")
 theme_override_font_sizes/normal_font_size = 400
 bbcode_enabled = true
 scroll_active = false
+
 [node name="Coins" type="Sprite2D" parent="."]
 position = Vector2(43, 51)
 scale = Vector2(2.875, 2.5)
@@ -112,13 +111,13 @@ texture = ExtResource("1_ovvsn")
 region_enabled = true
 region_rect = Rect2(0.0740738, -0.740738, 16.5926, 16.8889)
 
-[node name="CoinCounter" type="CanvasLayer" parent="."]
+[node name="CoinCounter" type="CanvasLayer" parent="Coins"]
 script = ExtResource("2_d616f")
 
-[node name="CoinCount" type="Label" parent="CoinCounter"]
-offset_left = 77.0
-offset_top = 45.0
-offset_right = 178.0
-offset_bottom = 85.0
+[node name="CoinCount" type="Label" parent="Coins/CoinCounter"]
+offset_left = 76.0
+offset_top = 36.0
+offset_right = 203.0
+offset_bottom = 76.0
 theme_override_colors/font_color = Color(0.379571, 0.0632068, 0.247897, 1)
-text = "0"
+theme_override_font_sizes/font_size = 25

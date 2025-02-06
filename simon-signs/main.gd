@@ -11,6 +11,9 @@ func _process(delta):
 	
 func _correct():
 	question._get_new_question()
+	CoinCounter.add_coins(5)  # Add 5 coins when the answer is correct
+	print("Coins added! Current count:", CoinCounter.gainedcoins)  # Debug
+
 
 #Code adapted from Joe Bustamante: "Godot Typing Game Tutorial"
 func _unhandled_input(event : InputEvent) -> void:
@@ -28,5 +31,3 @@ func _unhandled_input(event : InputEvent) -> void:
 			#incorrect answer function
 		# current_sign != key_typed
 			#incorrect answer function
-
-		
