@@ -32,6 +32,6 @@ var alphabet = [
 func get_prompt() -> String:
 	var word_index = randi() % alphabet.size()
 
-	var letter = alphabet[word_index]
+	var letter = alphabet[word_index].to_upper()
 
 	return letter
