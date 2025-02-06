@@ -45,6 +45,7 @@ offset_bottom = 89.0
 theme_override_colors/selection_color = Color(1, 0.192157, 0.192157, 1)
 theme_override_colors/font_placeholder_color = Color(0.996078, 0.976471, 0.976471, 1)
 theme_override_fonts/font = ExtResource("1_r5vhp")
+theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x3w1j")
 placeholder_text = "Type your answer here"
 alignment = 1
