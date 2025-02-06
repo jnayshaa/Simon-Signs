@@ -6,6 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://dv126r7f46hq6" path="res://Assets/pause_menu_icon.png" id="1_r58be"]
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
+; [gd_scene load_steps=4 format=3 uid="uid://r633jofxladq"]
+
+[ext_resource type="Texture2D" uid="uid://56ny5ronvt57" path="res://Assets/coins.png" id="1_ovvsn"]
+[ext_resource type="Script" path="res://coin_counter.gd" id="2_d616f"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -17,6 +21,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = 3.0
+offset_right = 1.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -97,3 +105,20 @@ theme_override_fonts/normal_font = ExtResource("2_uusxv")
 theme_override_font_sizes/normal_font_size = 400
 bbcode_enabled = true
 scroll_active = false
+[node name="Coins" type="Sprite2D" parent="."]
+position = Vector2(43, 51)
+scale = Vector2(2.875, 2.5)
+texture = ExtResource("1_ovvsn")
+region_enabled = true
+region_rect = Rect2(0.0740738, -0.740738, 16.5926, 16.8889)
+
+[node name="CoinCounter" type="CanvasLayer" parent="."]
+script = ExtResource("2_d616f")
+
+[node name="CoinCount" type="Label" parent="CoinCounter"]
+offset_left = 77.0
+offset_top = 45.0
+offset_right = 178.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(0.379571, 0.0632068, 0.247897, 1)
+text = "0"

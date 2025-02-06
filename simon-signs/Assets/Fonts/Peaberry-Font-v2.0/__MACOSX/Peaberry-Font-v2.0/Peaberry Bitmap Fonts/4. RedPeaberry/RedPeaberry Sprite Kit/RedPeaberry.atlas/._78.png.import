@@ -2,17 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ccqnhl4sqbvhh"
-; uid="uid://4hf3byddhfj2"
-path="res://.godot/imported/coin4_16x16 (1).png-75a52f97656da94f422c03ff37b9225b.ctex"
-metadata={
-"vram_texture": false
-}
+uid="uid://dol731uvikanu"
+valid=false
 
 [deps]
 
-source_file="res://Assets/Coins/coin4_16x16 (1).png"
-dest_files=["res://.godot/imported/coin4_16x16 (1).png-75a52f97656da94f422c03ff37b9225b.ctex"]
+source_file="res://Assets/Fonts/Peaberry-Font-v2.0/__MACOSX/Peaberry-Font-v2.0/Peaberry Bitmap Fonts/4. RedPeaberry/RedPeaberry Sprite Kit/RedPeaberry.atlas/._78.png"
 
 [params]
 
