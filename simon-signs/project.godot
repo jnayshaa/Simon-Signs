@@ -15,10 +15,6 @@ run/main_scene="res://ui.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
-[autoload]
-
-CoinCounter="*res://coin_counter.gd"
-
 [display]
 
 window/stretch/mode="viewport"

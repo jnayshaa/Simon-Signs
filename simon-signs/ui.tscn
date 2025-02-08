@@ -1,13 +1,14 @@
-[gd_scene load_steps=10 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=11 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
 [ext_resource type="Texture2D" uid="uid://56ny5ronvt57" path="res://Assets/coins.png" id="1_ovvsn"]
 [ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_r5vhp"]
 [ext_resource type="Texture2D" uid="uid://dv126r7f46hq6" path="res://Assets/pause_menu_icon.png" id="1_r58be"]
-[ext_resource type="Script" path="res://coin_counter.gd" id="2_d616f"]
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
+[ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
+[ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -103,21 +104,27 @@ theme_override_fonts/normal_font = ExtResource("2_uusxv")
 theme_override_font_sizes/normal_font_size = 400
 bbcode_enabled = true
 scroll_active = false
+metadata/_edit_use_anchors_ = true
 
-[node name="Coins" type="Sprite2D" parent="."]
+[node name="Coins2" type="Node" parent="."]
+script = ExtResource("8_o1bro")
+
+[node name="CoinCounter" type="Node" parent="Coins2"]
+script = ExtResource("9_ssju8")
+
+[node name="CoinCount" type="RichTextLabel" parent="Coins2"]
+offset_left = 81.0
+offset_top = 14.0
+offset_right = 227.0
+offset_bottom = 87.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+scroll_active = false
+
+[node name="Coins" type="Sprite2D" parent="Coins2"]
 position = Vector2(43, 51)
 scale = Vector2(2.875, 2.5)
 texture = ExtResource("1_ovvsn")
 region_enabled = true
 region_rect = Rect2(0.0740738, -0.740738, 16.5926, 16.8889)
-
-[node name="CoinCounter" type="CanvasLayer" parent="Coins"]
-script = ExtResource("2_d616f")
-
-[node name="CoinCount" type="Label" parent="Coins/CoinCounter"]
-offset_left = 76.0
-offset_top = 36.0
-offset_right = 203.0
-offset_bottom = 76.0
-theme_override_colors/font_color = Color(0.379571, 0.0632068, 0.247897, 1)
-theme_override_font_sizes/font_size = 25

@@ -2,6 +2,7 @@ extends Node
 
 @onready var question = $Question
 @onready var questionlist = $Question/QuestionList
+@onready var coincounter = $Coins2
 
 func _ready() -> void:
 	pass
@@ -11,8 +12,7 @@ func _process(delta):
 	
 func _correct():
 	question._get_new_question()
-	CoinCounter.add_coins(5)  # Add 5 coins when the answer is correct
-	print("Coins added! Current count:", CoinCounter.gainedcoins)  # Debug
+	coincounter.add_coins(5)  # Add 5 coins when the answer is correct
 
 
 #Code adapted from Joe Bustamante: "Godot Typing Game Tutorial"
