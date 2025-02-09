@@ -8,7 +8,7 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	display_text = tracker.get_amount()
-	display.parse_bbcode(set_center_tags(display_text))
+	display.parse_bbcode(display_text)
 
 func add_coins(amount: int):
 	tracker.add_coins(amount)
@@ -16,7 +16,7 @@ func add_coins(amount: int):
 	
 func _get_coin_amount():
 	display_text = tracker.get_amount()
-	display.parse_bbcode(set_center_tags(display_text))
+	display.parse_bbcode(display_text)
 	
 func get_display() -> String:
 	return display_text
