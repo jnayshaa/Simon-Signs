@@ -13,7 +13,9 @@ func _process(delta):
 func _correct():
 	question._get_new_question()
 	coincounter.add_coins(5)  # Add 5 coins when the answer is correct
-
+	
+func _incorrect():
+	coincounter.add_coins(1) #debugging
 
 #Code adapted from Joe Bustamante: "Godot Typing Game Tutorial"
 func _unhandled_input(event : InputEvent) -> void:
@@ -24,6 +26,9 @@ func _unhandled_input(event : InputEvent) -> void:
 		print(prompt)
 		if key_typed == prompt:
 				_correct()
+		if key_typed != prompt:
+				_incorrect()
+			
 		#if current_sign == key_typed (look up string comparsion in GDScript)
 			#correct answer function
 		#if timeer event zero
@@ -31,3 +36,6 @@ func _unhandled_input(event : InputEvent) -> void:
 			#incorrect answer function
 		# current_sign != key_typed
 			#incorrect answer function
+func _on_timer_timeout():
+	_incorrect()
+	question._get_new_question()

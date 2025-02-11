@@ -136,3 +136,18 @@ scale = Vector2(2.875, 2.5)
 texture = ExtResource("1_ovvsn")
 region_enabled = true
 region_rect = Rect2(0.0740738, -0.740738, 16.5926, 16.8889)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="display" type="RichTextLabel" parent="Timer"]
+anchors_preset = -1
+anchor_right = 0.028
+anchor_bottom = 0.049
+offset_left = 976.0
+offset_top = 600.0
+offset_right = 1111.74
+offset_bottom = 608.248
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
