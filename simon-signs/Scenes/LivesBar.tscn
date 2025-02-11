@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi5lk68325ppp"]
+
+[ext_resource type="Script" path="res://Assets/lives-coins.gd" id="1_6eo4h"]
+[ext_resource type="Texture2D" uid="uid://ux31trt51mnu" path="res://Assets/Heart and health bars/sprites/heart.png" id="2_1ytd8"]
+
+[node name="Control" type="Container"]
+anchors_preset = -1
+anchor_right = 0.121
+anchor_bottom = 0.062
+offset_right = -139.392
+offset_bottom = -40.176
+script = ExtResource("1_6eo4h")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="heart1" type="Sprite2D" parent="HBoxContainer/Control"]
+position = Vector2(-30, 5)
+texture = ExtResource("2_1ytd8")
+centered = false
+
+[node name="Control2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="heart2" type="Sprite2D" parent="HBoxContainer/Control2"]
+position = Vector2(-3, 4)
+texture = ExtResource("2_1ytd8")
+centered = false
+
+[node name="Control3" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="heart3" type="Sprite2D" parent="HBoxContainer/Control3"]
+position = Vector2(25, 3)
+texture = ExtResource("2_1ytd8")
+centered = false
+
+[node name="Control4" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="heart4" type="Sprite2D" parent="HBoxContainer/Control4"]
+position = Vector2(54, 2)
+texture = ExtResource("2_1ytd8")
+centered = false

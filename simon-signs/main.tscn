@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://dk82nxvad2p3b"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_mjjp2"]
+[ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="1_v743l"]
+[ext_resource type="Script" path="res://question.gd" id="2_t4ki4"]
+[ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="4_c1nan"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_mjjp2")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FingerBackground" type="ColorRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.0
+offset_top = -212.5
+offset_right = 450.0
+offset_bottom = 212.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+color = Color(0.4, 0.176471, 0.568627, 1)
+
+[node name="Question" type="Node" parent="FingerBackground"]
+script = ExtResource("2_t4ki4")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="FingerBackground/Question"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -146.5
+offset_top = -173.0
+offset_right = 146.5
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("1_v743l")
+theme_override_font_sizes/normal_font_size = 400
+bbcode_enabled = true
+text = "[center]z[/center]"
+scroll_active = false
+
+[node name="Control" parent="." instance=ExtResource("4_c1nan")]
+offset_left = 170.0
+offset_top = 554.0
+offset_right = 30.608
+offset_bottom = 513.824
