@@ -1,77 +1,69 @@
-[gd_scene load_steps=4 format=3 uid="uid://r633jofxladq"]
+[gd_scene load_steps=8 format=3 uid="uid://r633jofxladq"]
 
-[ext_resource type="Texture2D" uid="uid://56ny5ronvt57" path="res://Assets/coins.png" id="1_ovvsn"]
-[ext_resource type="Script" path="res://coin_counter.gd" id="2_d616f"]
+[ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_7lael"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
+[sub_resource type="Theme" id="Theme_sif05"]
 
-[node name="UI" type="Control"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kyeb4"]
+bg_color = Color(0.692004, 0.527902, 0.760767, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j28r8"]
+bg_color = Color(0.741425, 0.461081, 0.889497, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hh1xp"]
+bg_color = Color(0.937255, 0.396078, 0.521569, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oo017"]
+bg_color = Color(0.937255, 0.396078, 0.521569, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vklgm"]
+bg_color = Color(0.647059, 0.439216, 1, 1)
+
+[node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1.0
-offset_top = 3.0
-offset_right = 1.0
-offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Purple background" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 164.0
-offset_top = 125.0
-offset_right = 964.0
-offset_bottom = 465.0
-color = Color(0.4, 0.176471, 0.568627, 1)
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.5
+offset_top = -46.5
+offset_right = 31.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Text" type="Label" parent="."]
-modulate = Color(0, 0, 0, 1)
-clip_contents = true
-custom_minimum_size = Vector2(50, 25)
-layout_mode = 0
-offset_left = 166.0
-offset_top = 66.0
-offset_right = 566.0
-offset_bottom = 91.0
-scale = Vector2(2, 2)
-text = "Simon Signs____"
-horizontal_alignment = 1
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_direction = 1
+layout_mode = 2
 
-[node name="Input field bg" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 163.0
-offset_top = 476.0
-offset_right = 962.0
-offset_bottom = 565.0
-color = Color(0.937255, 0.396078, 0.521569, 1)
+[node name="Start" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_sif05")
+theme_override_colors/font_disabled_color = Color(0.937255, 0.396078, 0.521569, 1)
+theme_override_colors/icon_normal_color = Color(0.937255, 0.396078, 0.521569, 1)
+theme_override_fonts/font = ExtResource("1_7lael")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_kyeb4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_j28r8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hh1xp")
+text = "Start"
 
-[node name="Input field" type="LineEdit" parent="Input field bg"]
-layout_mode = 0
-offset_left = -1.0
-offset_top = 2.0
-offset_right = 799.0
-offset_bottom = 89.0
-theme_override_colors/selection_color = Color(1, 0.192157, 0.192157, 1)
-theme_override_colors/font_placeholder_color = Color(0.996078, 0.976471, 0.976471, 1)
-theme_override_styles/normal = SubResource("StyleBoxEmpty_x3w1j")
-placeholder_text = "Type your answer here"
-alignment = 1
+[node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_7lael")
+theme_override_styles/normal = SubResource("StyleBoxFlat_oo017")
+text = "Learn"
 
-[node name="Coins" type="Sprite2D" parent="."]
-position = Vector2(43, 51)
-scale = Vector2(2.875, 2.5)
-texture = ExtResource("1_ovvsn")
-region_enabled = true
-region_rect = Rect2(0.0740738, -0.740738, 16.5926, 16.8889)
-
-[node name="CoinCounter" type="CanvasLayer" parent="."]
-script = ExtResource("2_d616f")
-
-[node name="CoinCount" type="Label" parent="CoinCounter"]
-offset_left = 77.0
-offset_top = 45.0
-offset_right = 178.0
-offset_bottom = 85.0
-theme_override_colors/font_color = Color(0.379571, 0.0632068, 0.247897, 1)
-text = "0"
+[node name="Learn" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_7lael")
+theme_override_styles/normal = SubResource("StyleBoxFlat_vklgm")
+text = "Credits"
