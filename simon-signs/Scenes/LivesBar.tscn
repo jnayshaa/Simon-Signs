@@ -64,8 +64,8 @@ offset_right = 54.0
 offset_bottom = 2.0
 texture = ExtResource("2_1ytd8")
 
-[node name="WrongAnswerPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Wrong_ans" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_shqhm")
 
-[node name="RightAnswerPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Right_ans" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_he51b")

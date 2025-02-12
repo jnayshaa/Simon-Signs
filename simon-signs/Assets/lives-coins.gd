@@ -10,16 +10,16 @@ var lives = 4 # Start with 4 lives
 @onready var heart4= $HBoxContainer/Control/heart4
 
 #sound effects
-@onready var wrong = $WrongAnswerPlayer
-@onready var right= $RightAnswerPlayer
+@onready var wrong = $Wrong_ans
+@onready var right= $Right_ans
 #$HBoxContainer/Control2/heart2
 func _ready():
-	update_hearts()  # Update UI when game starts
+	updated_hearts()  # Update UI when game starts
 
 func lose_life():
 	if lives > 0:
 		lives -= 1
-		update_hearts()
+		updated_hearts()
 		wrong.play() #produces the sound effect for a wrong answer
 		#heart4.visible= not heart4.visible
 	
@@ -29,7 +29,7 @@ func lose_life():
 func right_ans():
 	right.play() # produces the sound effect for a right answer
 
-func update_hearts():
+func updated_hearts():
 	# Show only the number of hearts equal to lives
 	for i in range(len(hearts)):
 		hearts[i].visible = i < lives 
