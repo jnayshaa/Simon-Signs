@@ -5,9 +5,9 @@ var lives = 4 # Start with 4 lives
 @onready var HeartContainer = $HBoxContainer
 @onready var hearts = HeartContainer.get_children()  # Get reference to heart UI
 @onready var heart1 = $HBoxContainer/Control/heart1
-@onready var heart2= $HBoxContainer/Control/heart2
-@onready var heart3= $HBoxContainer/Control/heart3
-@onready var heart4= $HBoxContainer/Control/heart4
+@onready var heart2= $HBoxContainer/Control2/heart2
+@onready var heart3= $HBoxContainer/Control3/heart3
+@onready var heart4= $HBoxContainer/Control4/heart4
 
 #sound effects
 @onready var wrong = $Wrong_ans
