@@ -52,7 +52,7 @@ bbcode_enabled = true
 text = "[center]z[/center]"
 scroll_active = false
 
-[node name="Control" parent="." instance=ExtResource("4_c1nan")]
+[node name="lives_bar" parent="." instance=ExtResource("4_c1nan")]
 offset_left = 170.0
 offset_top = 554.0
 offset_right = 30.608
