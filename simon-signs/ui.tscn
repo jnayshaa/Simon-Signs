@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=12 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
+[ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -136,3 +137,9 @@ scale = Vector2(2.875, 2.5)
 texture = ExtResource("1_ovvsn")
 region_enabled = true
 region_rect = Rect2(0.0740738, -0.740738, 16.5926, 16.8889)
+
+[node name="Control" parent="." instance=ExtResource("10_fwi8q")]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0

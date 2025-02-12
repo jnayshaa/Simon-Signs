@@ -3,6 +3,7 @@ extends Node
 @onready var question = $Question
 @onready var questionlist = $Question/QuestionList
 @onready var coincounter = $Coins2
+@onready var lives= $Control
 
 func _ready() -> void:
 	pass
@@ -13,7 +14,10 @@ func _process(delta):
 func _correct():
 	question._get_new_question()
 	coincounter.add_coins(5)  # Add 5 coins when the answer is correct
-
+	lives.right_ans()
+func incorrect():
+	question._get_new_question()
+	lives.lose_life()
 
 #Code adapted from Joe Bustamante: "Godot Typing Game Tutorial"
 func _unhandled_input(event : InputEvent) -> void:
@@ -23,7 +27,10 @@ func _unhandled_input(event : InputEvent) -> void:
 		var prompt = question.get_prompt()
 		print(prompt)
 		if key_typed == prompt:
-				_correct()
+			_correct()
+		else:
+			incorrect()
+				
 		#if current_sign == key_typed (look up string comparsion in GDScript)
 			#correct answer function
 		#if timeer event zero

@@ -1,20 +1,16 @@
 [gd_scene load_steps=5 format=3 uid="uid://bi5lk68325ppp"]
 
-[ext_resource type="Script" path="res://Assets/lives-coins.gd" id="1_6eo4h"]
+[ext_resource type="Script" path="res://Assets/lives_coins.gd" id="1_6eo4h"]
 [ext_resource type="Texture2D" uid="uid://ux31trt51mnu" path="res://Assets/Heart and health bars/sprites/heart.png" id="2_1ytd8"]
 [ext_resource type="AudioStream" uid="uid://jejrdk4kbh7s" path="res://Scenes/wrong-47985 (1).mp3" id="3_shqhm"]
 [ext_resource type="AudioStream" uid="uid://cufbfl2rdcn55" path="res://Scenes/rightanswer-95219 (1).mp3" id="4_he51b"]
 
 [node name="Control" type="Container"]
-anchors_preset = -1
-anchor_right = 0.121
-anchor_bottom = 0.062
-offset_right = -139.392
-offset_bottom = -40.176
 script = ExtResource("1_6eo4h")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
+size_flags_horizontal = 4
 
 [node name="Control" type="Control" parent="HBoxContainer"]
 layout_mode = 2
@@ -22,10 +18,10 @@ size_flags_horizontal = 3
 
 [node name="heart1" type="TextureRect" parent="HBoxContainer/Control"]
 layout_mode = 0
-offset_left = -30.0
-offset_top = 5.0
-offset_right = -30.0
-offset_bottom = 5.0
+offset_left = 155.0
+offset_top = -72.0
+offset_right = 187.0
+offset_bottom = -40.0
 texture = ExtResource("2_1ytd8")
 
 [node name="Control2" type="Control" parent="HBoxContainer"]
@@ -34,10 +30,10 @@ size_flags_horizontal = 3
 
 [node name="heart2" type="TextureRect" parent="HBoxContainer/Control2"]
 layout_mode = 0
-offset_left = -3.0
-offset_top = 4.0
-offset_right = -3.0
-offset_bottom = 4.0
+offset_left = 182.0
+offset_top = -73.0
+offset_right = 214.0
+offset_bottom = -41.0
 texture = ExtResource("2_1ytd8")
 
 [node name="Control3" type="Control" parent="HBoxContainer"]
@@ -46,10 +42,10 @@ size_flags_horizontal = 3
 
 [node name="heart3" type="TextureRect" parent="HBoxContainer/Control3"]
 layout_mode = 0
-offset_left = 25.0
-offset_top = 3.0
-offset_right = 25.0
-offset_bottom = 3.0
+offset_left = 210.0
+offset_top = -74.0
+offset_right = 242.0
+offset_bottom = -42.0
 texture = ExtResource("2_1ytd8")
 
 [node name="Control4" type="Control" parent="HBoxContainer"]
@@ -58,10 +54,10 @@ size_flags_horizontal = 3
 
 [node name="heart4" type="TextureRect" parent="HBoxContainer/Control4"]
 layout_mode = 0
-offset_left = 54.0
-offset_top = 2.0
-offset_right = 54.0
-offset_bottom = 2.0
+offset_left = 239.0
+offset_top = -75.0
+offset_right = 271.0
+offset_bottom = -43.0
 texture = ExtResource("2_1ytd8")
 
 [node name="Wrong_ans" type="AudioStreamPlayer" parent="."]

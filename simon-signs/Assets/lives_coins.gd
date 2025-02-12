@@ -40,12 +40,12 @@ func game_over():
 #func end_game():
 	#print("Game Over")  # Replace with your game over logic
 
-func _input(event):
+#func _input(event):
 	# Simulating a wrong answer with SPACE key
-	if event.is_action_pressed("ui_accept"):  # Default is SPACE key
-		lose_life()
-	elif event.is_action_pressed("ui_right"):  #if correct answer is entered
-		right_ans()
+	#if event.is_action_pressed("ui_accept"):  # Default is SPACE key
+		#lose_life()
+	#elif event.is_action_pressed("ui_right"):  #if correct answer is entered
+		#right_ans()
 
  #Called when the node enters the scene tree for the first time.
 #	pass # Replace with function body.
