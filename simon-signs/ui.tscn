@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://r633jofxladq"]
+[gd_scene load_steps=9 format=3 uid="uid://r633jofxladq"]
 
 [ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_7lael"]
+[ext_resource type="Texture2D" uid="uid://jnydawk8nyst" path="res://Assets/Welcome (1).png" id="2_0kl2b"]
 
 [sub_resource type="Theme" id="Theme_sif05"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kyeb4"]
 bg_color = Color(0.692004, 0.527902, 0.760767, 1)
+corner_radius_top_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j28r8"]
 bg_color = Color(0.741425, 0.461081, 0.889497, 1)
@@ -24,6 +26,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 10.0
+offset_right = 8.0
+offset_bottom = 10.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -41,12 +47,18 @@ offset_bottom = 46.5
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Welcome(1)" type="Sprite2D" parent="MarginContainer"]
+position = Vector2(13, 93.5)
+scale = Vector2(0.497773, 0.509767)
+texture = ExtResource("2_0kl2b")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_direction = 1
 layout_mode = 2
 
 [node name="Start" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 8
 theme = SubResource("Theme_sif05")
 theme_override_colors/font_disabled_color = Color(0.937255, 0.396078, 0.521569, 1)
 theme_override_colors/icon_normal_color = Color(0.937255, 0.396078, 0.521569, 1)
@@ -64,6 +76,7 @@ text = "Learn"
 
 [node name="Learn" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 8
 theme_override_fonts/font = ExtResource("1_7lael")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vklgm")
 text = "Credits"
