@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=14 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
@@ -10,8 +10,8 @@
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
-[ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
 [ext_resource type="Script" path="res://countdown.gd" id="10_4jesu"]
+[ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -146,11 +146,12 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 grow_vertical = 0
+
 [node name="Countdown" type="Node" parent="."]
 script = ExtResource("10_4jesu")
 
 [node name="Timer" type="Timer" parent="Countdown"]
-wait_time = 15.0
+wait_time = 31.0
 autostart = true
 
 [node name="CoDisplay" type="RichTextLabel" parent="Countdown"]

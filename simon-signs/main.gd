@@ -6,6 +6,7 @@ extends Node
 @onready var lives= $Control
 @onready var inputfieldbg = $"UI/Input field bg"
 @onready var inputfield = $"UI/Input field bg/Input field"
+@onready var timer = $"Countdown/Timer"
 
 func _ready() -> void:
 	pass
@@ -21,6 +22,8 @@ func _correct():
 	question._get_new_question()
 	inputfield.text = ""
 	inputfieldbg.pink()  # Change input field color to pink
+	timer.start()
+	
 
 func _incorrect():
 	lives.lose_life()
