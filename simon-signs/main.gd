@@ -47,3 +47,6 @@ func _unhandled_input(event : InputEvent) -> void:
 			#incorrect answer function
 		# current_sign != key_typed
 			#incorrect answer function
+func _on_timer_timeout():
+	_incorrect()
+	question._get_new_question()

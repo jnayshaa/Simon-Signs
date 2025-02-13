@@ -11,6 +11,7 @@
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
+[ext_resource type="Script" path="res://countdown.gd" id="10_4jesu"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -145,3 +146,24 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 grow_vertical = 0
+[node name="Countdown" type="Node" parent="."]
+script = ExtResource("10_4jesu")
+
+[node name="Timer" type="Timer" parent="Countdown"]
+wait_time = 15.0
+autostart = true
+
+[node name="CoDisplay" type="RichTextLabel" parent="Countdown"]
+anchors_preset = -1
+anchor_right = 0.028
+anchor_bottom = 0.049
+offset_left = 1048.0
+offset_top = 600.0
+offset_right = 1079.74
+offset_bottom = 600.248
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("1_r5vhp")
+theme_override_font_sizes/normal_font_size = 32
+scroll_active = false
+
+[connection signal="timeout" from="Countdown/Timer" to="." method="_on_timer_timeout"]
