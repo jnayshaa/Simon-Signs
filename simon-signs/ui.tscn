@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=13 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
