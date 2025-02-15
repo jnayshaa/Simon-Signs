@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://cyaxejvwbt76r"]
+
+[ext_resource type="Script" path="res://letterpanel01.gd" id="1_cnea2"]
+[ext_resource type="FontFile" uid="uid://dhuswsuwvfcy3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/Peaberry-Base.otf" id="1_y8w7a"]
+[ext_resource type="Texture2D" uid="uid://dp8jyr4mt32hl" path="res://Assets/Signs/A.atlastex" id="2_hrlo2"]
+[ext_resource type="Script" path="res://box.gd" id="2_opryt"]
+[ext_resource type="Script" path="res://letter.gd" id="4_mshcr"]
+[ext_resource type="Script" path="res://hand.gd" id="5_sh08w"]
+
+[node name="FlipBook" type="Node2D"]
+
+[node name="Letters" type="Node" parent="."]
+
+[node name="Letter01" type="Node" parent="Letters"]
+script = ExtResource("1_cnea2")
+
+[node name="Box" type="ColorRect" parent="Letters/Letter01"]
+offset_right = 120.0
+offset_bottom = 90.0
+size_flags_horizontal = 6
+size_flags_vertical = 4
+color = Color(0.321569, 0.443137, 1, 1)
+script = ExtResource("2_opryt")
+metadata/_edit_use_anchors_ = true
+
+[node name="Letter" type="RichTextLabel" parent="Letters/Letter01/Box"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.483
+anchor_right = 0.5
+anchor_bottom = 0.483
+offset_left = -59.0
+offset_top = -25.47
+offset_right = 60.0
+offset_bottom = 25.53
+mouse_filter = 1
+theme_override_fonts/normal_font = ExtResource("1_y8w7a")
+theme_override_font_sizes/normal_font_size = 64
+bbcode_enabled = true
+text = "[center]A[/center]"
+scroll_active = false
+script = ExtResource("4_mshcr")
+metadata/_edit_use_anchors_ = true
+
+[node name="Hand" type="Sprite2D" parent="Letters/Letter01/Box"]
+visible = false
+position = Vector2(57, 40)
+scale = Vector2(0.207572, 0.207572)
+texture = ExtResource("2_hrlo2")
+script = ExtResource("5_sh08w")
+
+[connection signal="mouse_entered" from="Letters/Letter01/Box" to="Letters/Letter01" method="_on_box_mouse_entered"]
+[connection signal="mouse_exited" from="Letters/Letter01/Box" to="Letters/Letter01" method="_on_box_mouse_exited"]

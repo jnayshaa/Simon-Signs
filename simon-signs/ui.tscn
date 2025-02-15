@@ -68,6 +68,8 @@ offset_left = -400.5
 offset_top = -42.5
 offset_right = 399.5
 offset_bottom = 44.5
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/selection_color = Color(1, 0.192157, 0.192157, 1)
 theme_override_colors/font_placeholder_color = Color(0.996078, 0.976471, 0.976471, 1)
 theme_override_fonts/font = ExtResource("1_r5vhp")
@@ -164,10 +166,17 @@ region_enabled = true
 region_rect = Rect2(0.0740738, -0.740738, 16.5926, 16.8889)
 
 [node name="Control" parent="." instance=ExtResource("10_fwi8q")]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
+anchors_preset = -1
+anchor_left = 0.187
+anchor_top = 0.914
+anchor_right = 0.187
+anchor_bottom = 0.914
+offset_left = -215.424
+offset_top = 55.728
+offset_right = -215.424
+offset_bottom = 55.728
 grow_vertical = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="Countdown" type="Node" parent="."]
 script = ExtResource("10_4jesu")
