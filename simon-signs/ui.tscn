@@ -69,13 +69,13 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_j28r8")
 theme_override_styles/normal = SubResource("StyleBoxFlat_hh1xp")
 text = "Start"
 
-[node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Learn" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_7lael")
 theme_override_styles/normal = SubResource("StyleBoxFlat_oo017")
 text = "Learn"
 
-[node name="Learn" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 8
 theme_override_fonts/font = ExtResource("1_7lael")
