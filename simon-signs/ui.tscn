@@ -39,16 +39,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -176.0
+offset_left = -136.0
 offset_top = 25.0
-offset_right = -51.0
-offset_bottom = 84.0
+offset_right = -36.0
+offset_bottom = 85.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2.5, 2.5)
 
 [node name="Simon Signs Screen" type="Sprite2D" parent="MarginContainer"]
-position = Vector2(62, -13.6)
+position = Vector2(46, -12.4)
 scale = Vector2(0.174434, 0.171876)
 texture = ExtResource("2_0kl2b")
 
