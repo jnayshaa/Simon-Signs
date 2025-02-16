@@ -2,38 +2,38 @@
 
 [ext_resource type="Script" path="res://letterpanel01.gd" id="1_cnea2"]
 [ext_resource type="FontFile" uid="uid://dhuswsuwvfcy3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/Peaberry-Base.otf" id="1_y8w7a"]
-[ext_resource type="Texture2D" uid="uid://dp8jyr4mt32hl" path="res://Assets/Signs/A.atlastex" id="2_hrlo2"]
+[ext_resource type="Texture2D" uid="uid://dp72uw0em1eqy" path="res://Assets/Signs/A.atlastex" id="2_hrlo2"]
 [ext_resource type="Script" path="res://box.gd" id="2_opryt"]
 [ext_resource type="Script" path="res://letter.gd" id="4_mshcr"]
 [ext_resource type="Script" path="res://hand.gd" id="5_sh08w"]
-[ext_resource type="Texture2D" uid="uid://cgb0h5dxyox0g" path="res://Assets/Signs/B.atlastex" id="7_qf31m"]
-[ext_resource type="Texture2D" uid="uid://dpuytni7c528f" path="res://Assets/Signs/C.atlastex" id="8_ef1nv"]
-[ext_resource type="Texture2D" uid="uid://3reya4pdcxnp" path="res://Assets/Signs/D.atlastex" id="9_wnf83"]
-[ext_resource type="Texture2D" uid="uid://budl4vytqqu8u" path="res://Assets/Signs/E.atlastex" id="10_ay5cy"]
-[ext_resource type="Texture2D" uid="uid://b4ujjanc7moft" path="res://Assets/Signs/F.atlastex" id="11_x2xrw"]
-[ext_resource type="Texture2D" uid="uid://bh1iea0rpqjdu" path="res://Assets/Signs/G.atlastex" id="12_2t5xu"]
-[ext_resource type="Texture2D" uid="uid://vxwi51ye37f4" path="res://Assets/Signs/H.atlastex" id="13_c47xu"]
-[ext_resource type="Texture2D" uid="uid://cwqkk53qemmvi" path="res://Assets/Signs/I.atlastex" id="14_em800"]
-[ext_resource type="Texture2D" uid="uid://5ulftw2kkswy" path="res://Assets/Signs/J.atlastex" id="15_qm8dq"]
-[ext_resource type="Texture2D" uid="uid://cl43hv1voq8k7" path="res://Assets/Signs/K.atlastex" id="16_sn2j2"]
-[ext_resource type="Texture2D" uid="uid://bmocxeros3d7g" path="res://Assets/Signs/L.atlastex" id="17_q4vt1"]
-[ext_resource type="Texture2D" uid="uid://bo40t6ndohpvr" path="res://Assets/Signs/M.atlastex" id="18_hm8mc"]
-[ext_resource type="Texture2D" uid="uid://bsfiib7k13ls5" path="res://Assets/Signs/N.atlastex" id="19_yf6aw"]
-[ext_resource type="Texture2D" uid="uid://4qshor3lngjt" path="res://Assets/Signs/O.atlastex" id="20_q12ns"]
-[ext_resource type="Texture2D" uid="uid://uepka1kn5rax" path="res://Assets/Signs/P.atlastex" id="21_x5kwl"]
-[ext_resource type="Texture2D" uid="uid://3rdu70yhwnyo" path="res://Assets/Signs/Q.atlastex" id="22_7yanj"]
-[ext_resource type="Texture2D" uid="uid://dn6jswn1ma7vm" path="res://Assets/Signs/R.atlastex" id="23_n3eol"]
-[ext_resource type="Texture2D" uid="uid://ctpo0gpjs6nby" path="res://Assets/Signs/S.atlastex" id="24_7bjru"]
-[ext_resource type="Texture2D" uid="uid://btfjgsouoq6b2" path="res://Assets/Signs/T.atlastex" id="25_4f88g"]
-[ext_resource type="Texture2D" uid="uid://beyhpw7jm52gd" path="res://Assets/Signs/U.atlastex" id="26_v8vd4"]
-[ext_resource type="Texture2D" uid="uid://ja4qiqabfoxx" path="res://Assets/Signs/V.atlastex" id="27_2e5jg"]
-[ext_resource type="Texture2D" uid="uid://virjwjixhtq6" path="res://Assets/Signs/W.atlastex" id="28_dnoeu"]
-[ext_resource type="Texture2D" uid="uid://c6qop7i7e7kar" path="res://Assets/Signs/X.atlastex" id="29_bwt52"]
-[ext_resource type="Texture2D" uid="uid://blaptti0r4yi4" path="res://Assets/Signs/Y.atlastex" id="30_2m8rv"]
-[ext_resource type="Texture2D" uid="uid://v3b5lmkd23xe" path="res://Assets/Signs/Z.atlastex" id="31_60ytq"]
+[ext_resource type="Texture2D" uid="uid://dixgm73v0fu0y" path="res://Assets/Signs/B.atlastex" id="7_qf31m"]
+[ext_resource type="Texture2D" uid="uid://dtgkevudsnbfw" path="res://Assets/Signs/C.atlastex" id="8_ef1nv"]
+[ext_resource type="Texture2D" uid="uid://bbptbobgtkk15" path="res://Assets/Signs/D.atlastex" id="9_wnf83"]
+[ext_resource type="Texture2D" uid="uid://bltai6hianxmx" path="res://Assets/Signs/E.atlastex" id="10_ay5cy"]
+[ext_resource type="Texture2D" uid="uid://cr4p5yip30cfy" path="res://Assets/Signs/F.atlastex" id="11_x2xrw"]
+[ext_resource type="Texture2D" uid="uid://dqcghiiqldf4i" path="res://Assets/Signs/G.atlastex" id="12_2t5xu"]
+[ext_resource type="Texture2D" uid="uid://dl8idrq7yjxa8" path="res://Assets/Signs/H.atlastex" id="13_c47xu"]
+[ext_resource type="Texture2D" uid="uid://dalxgvl52puw6" path="res://Assets/Signs/I.atlastex" id="14_em800"]
+[ext_resource type="Texture2D" uid="uid://cwd4w33cwg102" path="res://Assets/Signs/J.atlastex" id="15_qm8dq"]
+[ext_resource type="Texture2D" uid="uid://ckw1xhpd71xnh" path="res://Assets/Signs/K.atlastex" id="16_sn2j2"]
+[ext_resource type="Texture2D" uid="uid://c23i13gqkq83f" path="res://Assets/Signs/L.atlastex" id="17_q4vt1"]
+[ext_resource type="Texture2D" uid="uid://dg0588lmwbjql" path="res://Assets/Signs/M.atlastex" id="18_hm8mc"]
+[ext_resource type="Texture2D" uid="uid://k1sjs776hgkd" path="res://Assets/Signs/N.atlastex" id="19_yf6aw"]
+[ext_resource type="Texture2D" uid="uid://buocmb0n36ci3" path="res://Assets/Signs/O.atlastex" id="20_q12ns"]
+[ext_resource type="Texture2D" uid="uid://dgm3k3poonfm8" path="res://Assets/Signs/P.atlastex" id="21_x5kwl"]
+[ext_resource type="Texture2D" uid="uid://bajtqdjmnh0gg" path="res://Assets/Signs/Q.atlastex" id="22_7yanj"]
+[ext_resource type="Texture2D" uid="uid://d07vpaaa6qq4q" path="res://Assets/Signs/R.atlastex" id="23_n3eol"]
+[ext_resource type="Texture2D" uid="uid://div2ywvg6lfvd" path="res://Assets/Signs/S.atlastex" id="24_7bjru"]
+[ext_resource type="Texture2D" uid="uid://dxftacwch0ttd" path="res://Assets/Signs/T.atlastex" id="25_4f88g"]
+[ext_resource type="Texture2D" uid="uid://isllub51ads8" path="res://Assets/Signs/U.atlastex" id="26_v8vd4"]
+[ext_resource type="Texture2D" uid="uid://bc4ahishntovx" path="res://Assets/Signs/V.atlastex" id="27_2e5jg"]
+[ext_resource type="Texture2D" uid="uid://binxofe4ths5v" path="res://Assets/Signs/W.atlastex" id="28_dnoeu"]
+[ext_resource type="Texture2D" uid="uid://c1b8ta6ow8p84" path="res://Assets/Signs/X.atlastex" id="29_bwt52"]
+[ext_resource type="Texture2D" uid="uid://kjyu8hiuuamv" path="res://Assets/Signs/Y.atlastex" id="30_2m8rv"]
+[ext_resource type="Texture2D" uid="uid://bq54ag0c454wo" path="res://Assets/Signs/Z.atlastex" id="31_60ytq"]
 
 [node name="FlipBook" type="Node2D"]
-position = Vector2(136, 64)
+position = Vector2(568, 296)
 
 [node name="Letters" type="Node" parent="."]
 
@@ -52,6 +52,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter01/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -72,7 +73,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter01/Box"]
-visible = false
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("2_hrlo2")
@@ -93,6 +93,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter02/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -113,7 +114,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter02/Box"]
-visible = false
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("7_qf31m")
@@ -134,6 +134,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter03/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -154,8 +155,7 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter03/Box"]
-visible = false
-position = Vector2(57, 40)
+position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("8_ef1nv")
 script = ExtResource("5_sh08w")
@@ -175,6 +175,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter04/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -195,7 +196,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter04/Box"]
-visible = false
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("9_wnf83")
@@ -216,6 +216,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter05/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -236,8 +237,7 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter05/Box"]
-visible = false
-position = Vector2(57, 40)
+position = Vector2(57, 44)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("10_ay5cy")
 script = ExtResource("5_sh08w")
@@ -257,6 +257,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter06/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -277,7 +278,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter06/Box"]
-visible = false
 position = Vector2(57, 47)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("11_x2xrw")
@@ -298,6 +298,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter07/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -318,7 +319,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter07/Box"]
-visible = false
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("12_2t5xu")
@@ -339,6 +339,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter08/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -359,7 +360,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter08/Box"]
-visible = false
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("13_c47xu")
@@ -380,6 +380,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter09/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -400,8 +401,7 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter09/Box"]
-visible = false
-position = Vector2(57, 44)
+position = Vector2(57, 49)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("14_em800")
 script = ExtResource("5_sh08w")
@@ -421,6 +421,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter10/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -441,8 +442,7 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter10/Box"]
-visible = false
-position = Vector2(57, 52)
+position = Vector2(57, 47)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("15_qm8dq")
 script = ExtResource("5_sh08w")
@@ -462,6 +462,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter11/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -482,7 +483,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter11/Box"]
-visible = false
 position = Vector2(57, 45)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("16_sn2j2")
@@ -503,6 +503,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter12/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -523,7 +524,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter12/Box"]
-visible = false
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("17_q4vt1")
@@ -544,6 +544,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter13/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -564,8 +565,7 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter13/Box"]
-visible = false
-position = Vector2(57, 40)
+position = Vector2(57, 45)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("18_hm8mc")
 script = ExtResource("5_sh08w")
@@ -585,6 +585,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter14/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -605,7 +606,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter14/Box"]
-visible = false
 position = Vector2(57, 44)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("19_yf6aw")
@@ -626,6 +626,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter15/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -646,7 +647,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter15/Box"]
-visible = false
 position = Vector2(57, 45)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("20_q12ns")
@@ -667,6 +667,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter16/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -687,7 +688,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter16/Box"]
-visible = false
 position = Vector2(57, 46)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("21_x5kwl")
@@ -708,6 +708,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter17/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -728,7 +729,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter17/Box"]
-visible = false
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("22_7yanj")
@@ -749,6 +749,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter18/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -769,7 +770,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter18/Box"]
-visible = false
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("23_n3eol")
@@ -790,6 +790,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter19/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -810,7 +811,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter19/Box"]
-visible = false
 position = Vector2(57, 45)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("24_7bjru")
@@ -831,6 +831,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter20/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -851,7 +852,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter20/Box"]
-visible = false
 position = Vector2(57, 46)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("25_4f88g")
@@ -872,6 +872,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter21/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -892,8 +893,7 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter21/Box"]
-visible = false
-position = Vector2(57, 40)
+position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("26_v8vd4")
 script = ExtResource("5_sh08w")
@@ -913,6 +913,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter22/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -933,8 +934,7 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter22/Box"]
-visible = false
-position = Vector2(57, 40)
+position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("27_2e5jg")
 script = ExtResource("5_sh08w")
@@ -954,6 +954,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter23/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -974,7 +975,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter23/Box"]
-visible = false
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("28_dnoeu")
@@ -995,6 +995,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter24/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -1015,7 +1016,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter24/Box"]
-visible = false
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("29_bwt52")
@@ -1036,6 +1036,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter25/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -1056,7 +1057,6 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter25/Box"]
-visible = false
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("30_2m8rv")
@@ -1077,6 +1077,7 @@ script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter26/Box"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
@@ -1097,27 +1098,28 @@ script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter26/Box"]
-visible = false
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("31_60ytq")
 script = ExtResource("5_sh08w")
 
 [node name="PurpleBG" type="ColorRect" parent="."]
-offset_left = -136.0
-offset_top = -64.0
-offset_right = 1016.0
-offset_bottom = 584.0
+offset_left = -568.0
+offset_top = -296.0
+offset_right = 584.0
+offset_bottom = 352.0
+size_flags_horizontal = 4
 mouse_filter = 2
 color = Color(0.647059, 0.439216, 1, 1)
 
 [node name="YellowBG" type="ColorRect" parent="."]
-offset_left = -112.0
-offset_top = -40.0
-offset_right = 992.0
-offset_bottom = 560.0
+offset_left = -544.0
+offset_top = -272.0
+offset_right = 560.0
+offset_bottom = 328.0
 mouse_filter = 2
 color = Color(0.988235, 0.717647, 0.141176, 1)
+metadata/_edit_use_anchors_ = true
 
 [connection signal="mouse_entered" from="Letters/Letter01/Box" to="Letters/Letter01" method="_on_box_mouse_entered"]
 [connection signal="mouse_exited" from="Letters/Letter01/Box" to="Letters/Letter01" method="_on_box_mouse_exited"]

@@ -16,10 +16,10 @@ func _process(delta):
 
 func _on_box_mouse_entered():
 	box._active()
-	hand._active()
-	text._inactive()
+	hand._inactive()
+	text._active()
 
 func _on_box_mouse_exited():
 	box._inactive()
-	hand._inactive()
-	text._active()
+	hand._active()
+	text._inactive()
