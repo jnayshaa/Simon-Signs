@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://r633jofxladq"]
+[gd_scene load_steps=10 format=3 uid="uid://r633jofxladq"]
 
 [ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_7lael"]
+[ext_resource type="Script" path="res://Menu.gd" id="1_172it"]
 [ext_resource type="Texture2D" uid="uid://jnydawk8nyst" path="res://Assets/Welcome (1).png" id="2_0kl2b"]
 
 [sub_resource type="Theme" id="Theme_sif05"]
@@ -31,6 +32,7 @@ offset_right = -145.216
 offset_bottom = -128.672
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_172it")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -81,3 +83,5 @@ size_flags_vertical = 8
 theme_override_fonts/font = ExtResource("1_7lael")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vklgm")
 text = "Credits"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Learn" to="." method="_on_learn_pressed"]

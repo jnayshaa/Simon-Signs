@@ -1,11 +1,7 @@
-[gd_scene load_steps=32 format=3 uid="uid://bn6k1evqsocii"]
+[gd_scene load_steps=28 format=3 uid="uid://bn6k1evqsocii"]
 
-[ext_resource type="Script" path="res://letterpanel01.gd" id="1_cnea2"]
 [ext_resource type="FontFile" uid="uid://dhuswsuwvfcy3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/Peaberry-Base.otf" id="1_y8w7a"]
 [ext_resource type="Texture2D" uid="uid://dp8jyr4mt32hl" path="res://Assets/Signs/A.atlastex" id="2_hrlo2"]
-[ext_resource type="Script" path="res://box.gd" id="2_opryt"]
-[ext_resource type="Script" path="res://letter.gd" id="4_mshcr"]
-[ext_resource type="Script" path="res://hand.gd" id="5_sh08w"]
 [ext_resource type="Texture2D" uid="uid://cgb0h5dxyox0g" path="res://Assets/Signs/B.atlastex" id="7_qf31m"]
 [ext_resource type="Texture2D" uid="uid://dpuytni7c528f" path="res://Assets/Signs/C.atlastex" id="8_ef1nv"]
 [ext_resource type="Texture2D" uid="uid://3reya4pdcxnp" path="res://Assets/Signs/D.atlastex" id="9_wnf83"]
@@ -38,7 +34,6 @@ position = Vector2(568, 296)
 [node name="Letters" type="Node" parent="."]
 
 [node name="Letter01" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter01"]
 offset_left = 136.0
@@ -48,7 +43,6 @@ offset_bottom = 154.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter01/Box"]
@@ -69,17 +63,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]A[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter01/Box"]
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("2_hrlo2")
-script = ExtResource("5_sh08w")
 
 [node name="Letter02" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter02"]
 offset_left = 288.0
@@ -89,7 +80,6 @@ offset_bottom = 154.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter02/Box"]
@@ -110,17 +100,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]B[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter02/Box"]
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("7_qf31m")
-script = ExtResource("5_sh08w")
 
 [node name="Letter03" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter03"]
 offset_left = 440.0
@@ -130,7 +117,6 @@ offset_bottom = 154.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter03/Box"]
@@ -151,17 +137,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]C[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter03/Box"]
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("8_ef1nv")
-script = ExtResource("5_sh08w")
 
 [node name="Letter04" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter04"]
 offset_left = 592.0
@@ -171,7 +154,6 @@ offset_bottom = 154.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter04/Box"]
@@ -192,17 +174,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]D[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter04/Box"]
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("9_wnf83")
-script = ExtResource("5_sh08w")
 
 [node name="Letter05" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter05"]
 offset_left = 744.0
@@ -212,7 +191,6 @@ offset_bottom = 154.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter05/Box"]
@@ -233,17 +211,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]E[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter05/Box"]
 position = Vector2(57, 44)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("10_ay5cy")
-script = ExtResource("5_sh08w")
 
 [node name="Letter06" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter06"]
 offset_left = 896.0
@@ -253,7 +228,6 @@ offset_bottom = 154.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter06/Box"]
@@ -274,17 +248,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]F[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter06/Box"]
 position = Vector2(57, 47)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("11_x2xrw")
-script = ExtResource("5_sh08w")
 
 [node name="Letter07" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter07"]
 offset_left = 136.0
@@ -294,7 +265,6 @@ offset_bottom = 266.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter07/Box"]
@@ -315,17 +285,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]G[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter07/Box"]
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("12_2t5xu")
-script = ExtResource("5_sh08w")
 
 [node name="Letter08" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter08"]
 offset_left = 288.0
@@ -335,7 +302,6 @@ offset_bottom = 266.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter08/Box"]
@@ -356,17 +322,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]H[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter08/Box"]
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("13_c47xu")
-script = ExtResource("5_sh08w")
 
 [node name="Letter09" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter09"]
 offset_left = 440.0
@@ -376,7 +339,6 @@ offset_bottom = 266.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter09/Box"]
@@ -397,17 +359,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]I[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter09/Box"]
 position = Vector2(57, 49)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("14_em800")
-script = ExtResource("5_sh08w")
 
 [node name="Letter10" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter10"]
 offset_left = 592.0
@@ -417,7 +376,6 @@ offset_bottom = 266.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter10/Box"]
@@ -438,17 +396,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]J[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter10/Box"]
 position = Vector2(57, 47)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("15_qm8dq")
-script = ExtResource("5_sh08w")
 
 [node name="Letter11" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter11"]
 offset_left = 744.0
@@ -458,7 +413,6 @@ offset_bottom = 266.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter11/Box"]
@@ -479,17 +433,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]K[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter11/Box"]
 position = Vector2(57, 45)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("16_sn2j2")
-script = ExtResource("5_sh08w")
 
 [node name="Letter12" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter12"]
 offset_left = 896.0
@@ -499,7 +450,6 @@ offset_bottom = 266.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter12/Box"]
@@ -520,17 +470,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]L[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter12/Box"]
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("17_q4vt1")
-script = ExtResource("5_sh08w")
 
 [node name="Letter13" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter13"]
 offset_left = 136.0
@@ -540,7 +487,6 @@ offset_bottom = 378.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter13/Box"]
@@ -561,17 +507,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]M[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter13/Box"]
 position = Vector2(57, 45)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("18_hm8mc")
-script = ExtResource("5_sh08w")
 
 [node name="Letter14" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter14"]
 offset_left = 288.0
@@ -581,7 +524,6 @@ offset_bottom = 378.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter14/Box"]
@@ -602,17 +544,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]N[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter14/Box"]
 position = Vector2(57, 44)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("19_yf6aw")
-script = ExtResource("5_sh08w")
 
 [node name="Letter15" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter15"]
 offset_left = 440.0
@@ -622,7 +561,6 @@ offset_bottom = 378.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter15/Box"]
@@ -643,17 +581,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]O[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter15/Box"]
 position = Vector2(57, 45)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("20_q12ns")
-script = ExtResource("5_sh08w")
 
 [node name="Letter16" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter16"]
 offset_left = 592.0
@@ -663,7 +598,6 @@ offset_bottom = 378.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter16/Box"]
@@ -684,17 +618,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]P[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter16/Box"]
 position = Vector2(57, 46)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("21_x5kwl")
-script = ExtResource("5_sh08w")
 
 [node name="Letter17" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter17"]
 offset_left = 744.0
@@ -704,7 +635,6 @@ offset_bottom = 378.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter17/Box"]
@@ -725,17 +655,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]Q[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter17/Box"]
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("22_7yanj")
-script = ExtResource("5_sh08w")
 
 [node name="Letter18" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter18"]
 offset_left = 896.0
@@ -745,7 +672,6 @@ offset_bottom = 378.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter18/Box"]
@@ -766,17 +692,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]R[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter18/Box"]
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("23_n3eol")
-script = ExtResource("5_sh08w")
 
 [node name="Letter19" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter19"]
 offset_left = 136.0
@@ -786,7 +709,6 @@ offset_bottom = 490.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter19/Box"]
@@ -807,17 +729,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]S[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter19/Box"]
 position = Vector2(57, 45)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("24_7bjru")
-script = ExtResource("5_sh08w")
 
 [node name="Letter20" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter20"]
 offset_left = 288.0
@@ -827,7 +746,6 @@ offset_bottom = 490.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter20/Box"]
@@ -848,17 +766,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]T[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter20/Box"]
 position = Vector2(57, 46)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("25_4f88g")
-script = ExtResource("5_sh08w")
 
 [node name="Letter21" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter21"]
 offset_left = 440.0
@@ -868,7 +783,6 @@ offset_bottom = 490.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter21/Box"]
@@ -889,17 +803,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]U[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter21/Box"]
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("26_v8vd4")
-script = ExtResource("5_sh08w")
 
 [node name="Letter22" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter22"]
 offset_left = 592.0
@@ -909,7 +820,6 @@ offset_bottom = 490.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter22/Box"]
@@ -930,17 +840,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]V[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter22/Box"]
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("27_2e5jg")
-script = ExtResource("5_sh08w")
 
 [node name="Letter23" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter23"]
 offset_left = 744.0
@@ -950,7 +857,6 @@ offset_bottom = 490.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter23/Box"]
@@ -971,17 +877,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]W[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter23/Box"]
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("28_dnoeu")
-script = ExtResource("5_sh08w")
 
 [node name="Letter24" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter24"]
 offset_left = 896.0
@@ -991,7 +894,6 @@ offset_bottom = 490.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter24/Box"]
@@ -1012,17 +914,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]X[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter24/Box"]
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("29_bwt52")
-script = ExtResource("5_sh08w")
 
 [node name="Letter25" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter25"]
 offset_left = 440.0
@@ -1032,7 +931,6 @@ offset_bottom = 602.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter25/Box"]
@@ -1053,17 +951,14 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]Y[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter25/Box"]
 position = Vector2(57, 40)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("30_2m8rv")
-script = ExtResource("5_sh08w")
 
 [node name="Letter26" type="Node" parent="Letters"]
-script = ExtResource("1_cnea2")
 
 [node name="Box" type="ColorRect" parent="Letters/Letter26"]
 offset_left = 592.0
@@ -1073,7 +968,6 @@ offset_bottom = 602.0
 size_flags_horizontal = 6
 size_flags_vertical = 4
 color = Color(0.321569, 0.443137, 1, 1)
-script = ExtResource("2_opryt")
 metadata/_edit_use_anchors_ = true
 
 [node name="Letter" type="RichTextLabel" parent="Letters/Letter26/Box"]
@@ -1094,14 +988,12 @@ theme_override_font_sizes/normal_font_size = 64
 bbcode_enabled = true
 text = "[center]Z[/center]"
 scroll_active = false
-script = ExtResource("4_mshcr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Hand" type="Sprite2D" parent="Letters/Letter26/Box"]
 position = Vector2(57, 43)
 scale = Vector2(0.207572, 0.207572)
 texture = ExtResource("31_60ytq")
-script = ExtResource("5_sh08w")
 
 [node name="PurpleBG" type="ColorRect" parent="."]
 offset_left = -568.0
