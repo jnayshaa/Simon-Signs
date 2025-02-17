@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cufbfl2rdcn55"
+path="res://.godot/imported/rightanswer-95219 (1).mp3-8abf0dacc9d58a3b041980f029d186cb.mp3str"
+
+[deps]
+
+source_file="res://Scenes/rightanswer-95219 (1).mp3"
+dest_files=["res://.godot/imported/rightanswer-95219 (1).mp3-8abf0dacc9d58a3b041980f029d186cb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

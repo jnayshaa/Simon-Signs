@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://bi5lk68325ppp"]
+
+[ext_resource type="Script" path="res://Assets/lives_coins.gd" id="1_6eo4h"]
+[ext_resource type="Texture2D" uid="uid://ux31trt51mnu" path="res://Assets/Heart and health bars/sprites/heart.png" id="2_1ytd8"]
+[ext_resource type="AudioStream" uid="uid://jejrdk4kbh7s" path="res://Scenes/wrong-47985 (1).mp3" id="3_shqhm"]
+[ext_resource type="AudioStream" uid="uid://cufbfl2rdcn55" path="res://Scenes/rightanswer-95219 (1).mp3" id="4_he51b"]
+
+[node name="Control" type="Container"]
+script = ExtResource("1_6eo4h")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Control" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="heart1" type="TextureRect" parent="HBoxContainer/Control"]
+layout_mode = 0
+offset_left = 152.0
+offset_top = -72.0
+offset_right = 184.0
+offset_bottom = -40.0
+texture = ExtResource("2_1ytd8")
+
+[node name="Control2" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="heart2" type="TextureRect" parent="HBoxContainer/Control2"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = -72.0
+offset_right = 212.0
+offset_bottom = -40.0
+texture = ExtResource("2_1ytd8")
+
+[node name="Control3" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="heart3" type="TextureRect" parent="HBoxContainer/Control3"]
+layout_mode = 0
+offset_left = 208.0
+offset_top = -72.0
+offset_right = 240.0
+offset_bottom = -40.0
+texture = ExtResource("2_1ytd8")
+
+[node name="Control4" type="Control" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="heart4" type="TextureRect" parent="HBoxContainer/Control4"]
+layout_mode = 0
+offset_left = 236.0
+offset_top = -72.0
+offset_right = 268.0
+offset_bottom = -40.0
+texture = ExtResource("2_1ytd8")
+
+[node name="Wrong_ans" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_shqhm")
+
+[node name="Right_ans" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_he51b")
