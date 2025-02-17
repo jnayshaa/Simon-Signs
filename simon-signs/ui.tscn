@@ -50,7 +50,7 @@ grow_vertical = 2
 scale = Vector2(2.5, 2.5)
 
 [node name="Simon Signs Screen" type="Sprite2D" parent="MarginContainer"]
-position = Vector2(46, -12.4)
+position = Vector2(47.2, -14)
 scale = Vector2(0.174434, 0.171876)
 texture = ExtResource("2_0kl2b")
 
@@ -85,3 +85,4 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_vklgm")
 text = "Credits"
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Learn" to="." method="_on_learn_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
