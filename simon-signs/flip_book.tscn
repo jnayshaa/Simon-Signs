@@ -1186,3 +1186,4 @@ text = "BACK TO MENU"
 [connection signal="mouse_exited" from="Letters/Letter25/Box" to="Letters/Letter25" method="_on_box_mouse_exited"]
 [connection signal="mouse_entered" from="Letters/Letter26/Box" to="Letters/Letter26" method="_on_box_mouse_entered"]
 [connection signal="mouse_exited" from="Letters/Letter26/Box" to="Letters/Letter26" method="_on_box_mouse_exited"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
