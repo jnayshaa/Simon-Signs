@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://r633jofxladq"]
 
-[ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_7lael"]
-[ext_resource type="Script" path="res://Menu.gd" id="1_172it"]
-[ext_resource type="Texture2D" uid="uid://jnydawk8nyst" path="res://Assets/Welcome (1).png" id="2_0kl2b"]
+[ext_resource type="Script" path="res://Menu.gd" id="1_qvn84"]
+[ext_resource type="Texture2D" uid="uid://jnydawk8nyst" path="res://Assets/Welcome (1).png" id="2_5u8gk"]
+[ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="3_4wem7"]
 
 [sub_resource type="Theme" id="Theme_sif05"]
 
@@ -32,7 +32,7 @@ offset_right = -145.216
 offset_bottom = -128.672
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_172it")
+script = ExtResource("1_qvn84")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -52,7 +52,7 @@ scale = Vector2(2.5, 2.5)
 [node name="Simon Signs Screen" type="Sprite2D" parent="MarginContainer"]
 position = Vector2(47.2, -14)
 scale = Vector2(0.174434, 0.171876)
-texture = ExtResource("2_0kl2b")
+texture = ExtResource("2_5u8gk")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_direction = 1
@@ -65,7 +65,7 @@ size_flags_vertical = 8
 theme = SubResource("Theme_sif05")
 theme_override_colors/font_disabled_color = Color(0.937255, 0.396078, 0.521569, 1)
 theme_override_colors/icon_normal_color = Color(0.937255, 0.396078, 0.521569, 1)
-theme_override_fonts/font = ExtResource("1_7lael")
+theme_override_fonts/font = ExtResource("3_4wem7")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_kyeb4")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_j28r8")
 theme_override_styles/normal = SubResource("StyleBoxFlat_hh1xp")
@@ -73,14 +73,14 @@ text = "Start"
 
 [node name="Learn" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_7lael")
+theme_override_fonts/font = ExtResource("3_4wem7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_oo017")
 text = "Learn"
 
 [node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 8
-theme_override_fonts/font = ExtResource("1_7lael")
+theme_override_fonts/font = ExtResource("3_4wem7")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vklgm")
 text = "Credits"
 
