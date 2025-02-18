@@ -14,17 +14,17 @@ func _process(delta):
 	pass
 	
 func _correct():
-	inputfieldbg.green()
+	#nputfieldbg.green()
 	coincounter.add_coins(5)  # Add 5 coins when the answer is correct
 	lives.right_ans()
 	await get_tree().create_timer(0.5).timeout  # Wait for 1 second
 	question._get_new_question()
 	inputfield.text = ""
-	inputfieldbg.pink()  # Change input field color to pink
+	#nputfieldbg.pink()  # Change input field color to pink
 
 func _incorrect():
-	lives.lose_life()
-	inputfieldbg.red()
+	lives.life_lost()
+	#nputfieldbg.red()
 	inputfield.text = ""
 
 func hearts_number():
@@ -42,6 +42,7 @@ func _unhandled_input(event : InputEvent) -> void:
 				_correct()
 		if key_typed != prompt:
 				_incorrect()
+		hearts_number()
 		#if event.key_label == KEY_BACKSPACE:  # Correct way to check for Backspace
 				#inputfieldbg.pink()
 		#if current_sign == key_typed (look up string comparsion in GDScript)
