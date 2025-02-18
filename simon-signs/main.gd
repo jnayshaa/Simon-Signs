@@ -17,7 +17,15 @@ func _correct():
 	lives.right_ans()
 func incorrect():
 	question._get_new_question()
-	lives.lose_life()
+	lives.life_lost()
+	
+func hearts_number():
+	if lives.remaining_hearts() == 0:
+		lives.restart()
+	
+	
+	
+
 
 #Code adapted from Joe Bustamante: "Godot Typing Game Tutorial"
 func _unhandled_input(event : InputEvent) -> void:
@@ -30,7 +38,8 @@ func _unhandled_input(event : InputEvent) -> void:
 			_correct()
 		else:
 			incorrect()
-				
+		hearts_number()
+		
 		#if current_sign == key_typed (look up string comparsion in GDScript)
 			#correct answer function
 		#if timeer event zero
