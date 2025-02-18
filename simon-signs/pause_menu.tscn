@@ -1,18 +1,69 @@
-[gd_scene format=3 uid="uid://bxdbm2t7fev3g"]
+[gd_scene load_steps=5 format=3 uid="uid://bxdbm2t7fev3g"]
 
-[node name="Pause Menu" type="Control"]
-layout_mode = 3
+[ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_13pqe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8jmp"]
+bg_color = Color(0.321569, 0.443137, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yksb3"]
+bg_color = Color(0.321569, 0.443137, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_53ky0"]
+bg_color = Color(0.321569, 0.443137, 1, 1)
+
+[node name="ColorRect" type="ColorRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="."]
-modulate = Color(0, 0, 0, 1)
-light_mask = 2
-layout_mode = 0
-offset_left = -4.0
-offset_right = 1148.0
-offset_bottom = 646.0
-color = Color(0, 0, 0, 1)
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(350, 420)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.988235, 0.717647, 0.141176, 1)
+theme_override_fonts/font = ExtResource("1_13pqe")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8jmp")
+text = "Resume"
+
+[node name="Button2" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.988235, 0.717647, 0.141176, 1)
+theme_override_fonts/font = ExtResource("1_13pqe")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_yksb3")
+text = "Sound on/off"
+
+[node name="Button3" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.988235, 0.717647, 0.141176, 1)
+theme_override_fonts/font = ExtResource("1_13pqe")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_53ky0")
+text = "Quit"
