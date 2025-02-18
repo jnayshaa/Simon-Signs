@@ -26,9 +26,13 @@ func _correct():
 	
 
 func _incorrect():
-	lives.lose_life()
+	lives.life_lost()
 	inputfieldbg.red()
 	inputfield.text = ""
+
+func hearts_number():
+	if lives.remaining_hearts() == 0:
+		lives.restart()
 
 #Code adapted from Joe Bustamante: "Godot Typing Game Tutorial"
 func _unhandled_input(event : InputEvent) -> void:
@@ -41,6 +45,7 @@ func _unhandled_input(event : InputEvent) -> void:
 				_correct()
 		if key_typed != prompt:
 				_incorrect()
+		hearts_number()
 		#if event.key_label == KEY_BACKSPACE:  # Correct way to check for Backspace
 				#inputfieldbg.pink()
 		#if current_sign == key_typed (look up string comparsion in GDScript)
