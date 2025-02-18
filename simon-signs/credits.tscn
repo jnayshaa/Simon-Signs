@@ -1,9 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://bbbsi2gqfbe27"]
+[gd_scene load_steps=15 format=3 uid="uid://c5v1tfpqipua4"]
 
 [ext_resource type="Script" path="res://credits.gd" id="1_mavqo"]
 [ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_xno64"]
 [ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="2_yqkgg"]
-[ext_resource type="Texture2D" uid="uid://c260opgg1vp64" path="res://Credits.png" id="4_6d452"]
+[ext_resource type="Texture2D" uid="uid://cvaptq1tjbcbn" path="res://Blue White Cute Simple Winter Illustration Presentation (4).png" id="5_h6o05"]
 
 [sub_resource type="Theme" id="Theme_coa5j"]
 
@@ -89,9 +89,9 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_qa2cd")
 theme_override_styles/normal = SubResource("StyleBoxFlat_n3aq8")
 text = "BACK TO MENU"
 
-[node name="Credits" type="Sprite2D" parent="."]
-position = Vector2(94, 565)
-scale = Vector2(0.460807, 0.429398)
-texture = ExtResource("4_6d452")
+[node name="NewCredits" type="Sprite2D" parent="."]
+position = Vector2(88, 568)
+scale = Vector2(0.467187, 0.447917)
+texture = ExtResource("5_h6o05")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
