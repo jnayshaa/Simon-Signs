@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://56ny5ronvt57" path="res://Assets/coins.png" id="1_ovvsn"]
 [ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_r5vhp"]
 [ext_resource type="Texture2D" uid="uid://dv126r7f46hq6" path="res://Assets/pause_menu_icon.png" id="1_r58be"]
-[ext_resource type="Script" path="res://input_field_bg.gd" id="2_usb3l"]
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
@@ -45,7 +44,6 @@ offset_top = 476.0
 offset_right = 962.0
 offset_bottom = 565.0
 color = Color(0.937255, 0.396078, 0.521569, 1)
-script = ExtResource("2_usb3l")
 
 [node name="Input field" type="LineEdit" parent="UI/Input field bg"]
 layout_mode = 0
@@ -168,3 +166,20 @@ theme_override_font_sizes/normal_font_size = 32
 scroll_active = false
 
 [connection signal="timeout" from="Countdown/Timer" to="." method="_on_timer_timeout"]
+
+[node name="GameOverText" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.0
+offset_top = -49.0
+offset_right = -62.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+size_flags_horizontal = 4
+text = "GAME OVER"
