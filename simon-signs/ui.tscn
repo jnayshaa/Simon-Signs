@@ -1,16 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://c86ovob0lgedu"]
+[gd_scene load_steps=12 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
 [ext_resource type="Texture2D" uid="uid://56ny5ronvt57" path="res://Assets/coins.png" id="1_ovvsn"]
 [ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_r5vhp"]
 [ext_resource type="Texture2D" uid="uid://dv126r7f46hq6" path="res://Assets/pause_menu_icon.png" id="1_r58be"]
-[ext_resource type="Script" path="res://input_field_bg.gd" id="2_usb3l"]
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
-[ext_resource type="Script" path="res://countdown.gd" id="10_4jesu"]
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
@@ -45,7 +43,6 @@ offset_top = 476.0
 offset_right = 962.0
 offset_bottom = 565.0
 color = Color(0.937255, 0.396078, 0.521569, 1)
-script = ExtResource("2_usb3l")
 
 [node name="Input field" type="LineEdit" parent="UI/Input field bg"]
 layout_mode = 0
@@ -147,24 +144,19 @@ anchor_top = 1.0
 anchor_bottom = 1.0
 grow_vertical = 0
 
-[node name="Countdown" type="Node" parent="."]
-script = ExtResource("10_4jesu")
-
-[node name="Timer" type="Timer" parent="Countdown"]
-wait_time = 15.0
-autostart = true
-
-[node name="CoDisplay" type="RichTextLabel" parent="Countdown"]
-anchors_preset = -1
-anchor_right = 0.028
-anchor_bottom = 0.049
-offset_left = 1048.0
-offset_top = 600.0
-offset_right = 1079.74
-offset_bottom = 600.248
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("1_r5vhp")
-theme_override_font_sizes/normal_font_size = 32
-scroll_active = false
-
-[connection signal="timeout" from="Countdown/Timer" to="." method="_on_timer_timeout"]
+[node name="GameOverText" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.0
+offset_top = -49.0
+offset_right = -62.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+size_flags_horizontal = 4
+text = "GAME OVER"
