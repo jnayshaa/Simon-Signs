@@ -18,7 +18,7 @@ func _correct():
 	inputfieldbg.green()
 	coincounter.add_coins(5)  # Add 5 coins when the answer is correct
 	lives.right_ans()
-	await get_tree().create_timer(0.5).timeout  # Wait for 1 second
+	await get_tree().create_timer(0.5).timeout  # Wait for 0.5 second
 	question._get_new_question()
 	inputfield.text = ""
 	inputfieldbg.pink()  # Change input field color to pink
