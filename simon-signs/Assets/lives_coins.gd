@@ -30,6 +30,8 @@ func life_lost():
 	
 	if lives == 0:
 		game_over()
+		await get_tree().create_timer(0.75).timeout  # Wait for 0.75 second
+		get_tree().change_scene_to_file("res://startmenu.tscn")
 		
 func remaining_hearts():
 	# Show only the number of hearts equal to lives
