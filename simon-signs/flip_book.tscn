@@ -1,5 +1,6 @@
-[gd_scene load_steps=32 format=3 uid="uid://cyaxejvwbt76r"]
+[gd_scene load_steps=35 format=3 uid="uid://lh8ndoj1fmnk"]
 
+[ext_resource type="Script" path="res://flip_book.gd" id="1_4b3j3"]
 [ext_resource type="Script" path="res://letterpanel01.gd" id="1_cnea2"]
 [ext_resource type="FontFile" uid="uid://dhuswsuwvfcy3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/Peaberry-Base.otf" id="1_y8w7a"]
 [ext_resource type="Texture2D" uid="uid://dp72uw0em1eqy" path="res://Assets/Signs/A.atlastex" id="2_hrlo2"]
@@ -31,9 +32,14 @@
 [ext_resource type="Texture2D" uid="uid://c1b8ta6ow8p84" path="res://Assets/Signs/X.atlastex" id="29_bwt52"]
 [ext_resource type="Texture2D" uid="uid://kjyu8hiuuamv" path="res://Assets/Signs/Y.atlastex" id="30_2m8rv"]
 [ext_resource type="Texture2D" uid="uid://bq54ag0c454wo" path="res://Assets/Signs/Z.atlastex" id="31_60ytq"]
+[ext_resource type="FontFile" uid="uid://c4trwij4yxu4n" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.woff" id="33_cxrfv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gmh4q"]
+bg_color = Color(0.4, 0.176471, 0.568627, 1)
 
 [node name="FlipBook" type="Node2D"]
 position = Vector2(568, 296)
+script = ExtResource("1_4b3j3")
 
 [node name="Letters" type="Node" parent="."]
 
@@ -1121,6 +1127,15 @@ mouse_filter = 2
 color = Color(0.988235, 0.717647, 0.141176, 1)
 metadata/_edit_use_anchors_ = true
 
+[node name="BackButton" type="Button" parent="."]
+offset_left = 361.0
+offset_top = 250.0
+offset_right = 527.0
+offset_bottom = 301.0
+theme_override_fonts/font = ExtResource("33_cxrfv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gmh4q")
+text = "BACK TO MENU"
+
 [connection signal="mouse_entered" from="Letters/Letter01/Box" to="Letters/Letter01" method="_on_box_mouse_entered"]
 [connection signal="mouse_exited" from="Letters/Letter01/Box" to="Letters/Letter01" method="_on_box_mouse_exited"]
 [connection signal="mouse_entered" from="Letters/Letter02/Box" to="Letters/Letter02" method="_on_box_mouse_entered"]
@@ -1173,3 +1188,4 @@ metadata/_edit_use_anchors_ = true
 [connection signal="mouse_exited" from="Letters/Letter25/Box" to="Letters/Letter25" method="_on_box_mouse_exited"]
 [connection signal="mouse_entered" from="Letters/Letter26/Box" to="Letters/Letter26" method="_on_box_mouse_entered"]
 [connection signal="mouse_exited" from="Letters/Letter26/Box" to="Letters/Letter26" method="_on_box_mouse_exited"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
