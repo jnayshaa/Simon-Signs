@@ -10,7 +10,7 @@
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
-[ext_resource type="Texture2D" uid="uid://c5giy0wck5mrg" path="res://mglass.png" id="11_1ks28"]
+[ext_resource type="Texture2D" uid="uid://ckgpjodac0bcn" path="res://mglass.png" id="11_1ks28"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 

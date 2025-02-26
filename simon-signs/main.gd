@@ -6,6 +6,7 @@ extends Node
 @onready var lives= $Control
 @onready var inputfieldbg = $"UI/Input field bg"
 @onready var inputfield = $"UI/Input field bg/Input field"
+@onready var timer = $"Countdown/Timer"
 
 func _ready() -> void:
 	pass
@@ -14,17 +15,19 @@ func _process(delta):
 	pass
 	
 func _correct():
-	#nputfieldbg.green()
+	inputfieldbg.green()
 	coincounter.add_coins(5)  # Add 5 coins when the answer is correct
 	lives.right_ans()
-	await get_tree().create_timer(0.5).timeout  # Wait for 1 second
+	await get_tree().create_timer(0.5).timeout  # Wait for 0.5 second
 	question._get_new_question()
 	inputfield.text = ""
-	#nputfieldbg.pink()  # Change input field color to pink
+	inputfieldbg.pink()  # Change input field color to pink
+	timer.start()
+	
 
 func _incorrect():
 	lives.life_lost()
-	#nputfieldbg.red()
+	inputfieldbg.red()
 	inputfield.text = ""
 
 func hearts_number():
