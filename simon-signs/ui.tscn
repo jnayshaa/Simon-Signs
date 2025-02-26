@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=13 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
@@ -10,6 +10,7 @@
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
+[ext_resource type="Texture2D" uid="uid://c5giy0wck5mrg" path="res://mglass.png" id="11_1ks28"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -160,3 +161,13 @@ grow_vertical = 2
 scale = Vector2(3, 3)
 size_flags_horizontal = 4
 text = "GAME OVER"
+
+[node name="Hint Asset Icon" type="TextureButton" parent="."]
+offset_left = 21.0
+offset_top = 99.0
+offset_right = 153.0
+offset_bottom = 237.0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("11_1ks28")
+texture_pressed = ExtResource("11_1ks28")
+texture_hover = ExtResource("11_1ks28")
