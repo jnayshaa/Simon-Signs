@@ -25,6 +25,5 @@ func set_center_tags(string_to_center: String):
 
 func _decrease_coin_amount():
 	tracker.add_coins(-5)
-	display_text=tracker.get_amount()
-	display.parse_bbcode(display_text)
+	_get_coin_amount()
 	
