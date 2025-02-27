@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bbbsi2gqfbe27"]
+[gd_scene load_steps=15 format=3 uid="uid://c5v1tfpqipua4"]
 
 [ext_resource type="Script" path="res://credits.gd" id="1_mavqo"]
 [ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_xno64"]

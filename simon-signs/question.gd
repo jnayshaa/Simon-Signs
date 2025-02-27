@@ -16,6 +16,7 @@ func _process(delta):
 	
 func _get_new_question():
 	prompt_text = QuestionList.get_prompt()
+	#print(prompt_text)
 	prompt.parse_bbcode(set_center_tags(prompt_text))
 	
 func get_prompt() -> String:
