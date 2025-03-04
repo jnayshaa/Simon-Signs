@@ -24,8 +24,8 @@ func set_center_tags(string_to_center: String):
 	return "[center]" + string_to_center + "[/center]"
 
 func _decrease_coin_amount():
-	if tracker.gainedcoins >= 5:
-		tracker.add_coins(-5)
+	if tracker.gainedcoins >= 10:
+		tracker.add_coins(-10)
 		_get_coin_amount()  
 	else:
 		print("Not enough coins!")
