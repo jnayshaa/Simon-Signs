@@ -8,6 +8,7 @@
 [ext_resource type="Script" path="res://input_field_bg.gd" id="2_1wg5d"]
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
+[ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="4_mx7fl"]
 [ext_resource type="Script" path="res://menu_button.gd" id="5_m7usv"]
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
@@ -19,6 +20,9 @@
 [ext_resource type="Script" path="res://hint_list.gd" id="17_auuyq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukeqw"]
+bg_color = Color(0.937255, 0.396078, 0.521569, 1)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_myw06")
@@ -65,6 +69,24 @@ theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxEmpty_x3w1j")
 placeholder_text = "Type your answer here"
 alignment = 1
+
+[node name="HintButtonPanel" type="Panel" parent="UI"]
+visible = false
+layout_mode = 0
+offset_left = 7.0
+offset_top = 157.0
+offset_right = 154.0
+offset_bottom = 197.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ukeqw")
+
+[node name="HintDisplayText" type="Label" parent="UI/HintButtonPanel"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 15.0
+offset_right = 90.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("4_mx7fl")
+text = "Hints"
 
 [node name="MenuButton" type="MenuButton" parent="."]
 anchors_preset = -1
