@@ -19,13 +19,15 @@ func _ready():
 	remaining_hearts()  # Update hearts when game starts
 	
 func right_ans():
-	right.play() # produces the sound effect for a right answer	
+	if Global.sound_enabled:
+		right.play() # produces the sound effect for a right answer	
 
 func life_lost():
 	if lives > 0:
 		lives -= 1
 		remaining_hearts()
-		wrong.play() #produces the sound effect for a wrong answer
+		if Global.sound_enabled:
+			wrong.play() #produces the sound effect for a wrong answer
 		#heart4.visible= not heart4.visible
 	
 	if lives == 0:
@@ -49,34 +51,5 @@ func restart():
 	remaining_hearts() #Shows all hearts again
 	CoinCounter.parse_bbcode("0") # coins are back to zero
 	
-func sound_effects():
-	#adds the sound effects for the s 
-
-#func _input(event):
-	# Simulating a wrong answer with SPACE key
-	#if event.is_action_pressed("ui_accept"):  # Default is SPACE key
-		#life_lost()
-	#elif event.is_action_pressed("ui_right"):  #if correct answer is entered
-		#right_ans()
-	#if event.is_action_pressed("restart"):  
-		#restart()
-
-
- #Called when the node enters the scene tree for the first time.
-#	pass # Replace with function body.
-
-
- #Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-	#pass
-
-
-
-# Called when the node enters the scene tree for the first time.
-#func _ready() -> void:
-	#pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
+func sound_off():
 	pass
