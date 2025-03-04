@@ -12,3 +12,12 @@ func add_coins(amount: int):
 
 func get_amount() -> String:
 	return str(gainedcoins)
+
+
+func _on_hint_button_pressed():
+	print ("Hint button pressed")
+	if gainedcoins>=5:
+		gainedcoins-=5 #Decrement 5 coins for each hint used.
+		print ("hint used.")
+	else:
+		print("not enough coins")

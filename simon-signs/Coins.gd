@@ -4,7 +4,6 @@ extends Node
 @onready var display = $CoinCount
 @onready var display_text = display.text
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	display_text = tracker.get_amount()
@@ -23,3 +22,8 @@ func get_display() -> String:
 	
 func set_center_tags(string_to_center: String):
 	return "[center]" + string_to_center + "[/center]"
+
+func _decrease_coin_amount():
+	tracker.add_coins(-5)
+	_get_coin_amount()
+	
