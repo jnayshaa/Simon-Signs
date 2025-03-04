@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=19 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
@@ -13,8 +13,10 @@
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
 [ext_resource type="Script" path="res://countdown.gd" id="10_4jesu"]
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
-[ext_resource type="PackedScene" uid="uid://sgv7g6qv4sxv" path="res://pause_menu.tscn" id="14_cwvae"]
+[ext_resource type="PackedScene" uid="uid://bxdbm2t7fev3g" path="res://pause_menu.tscn" id="14_cwvae"]
 [ext_resource type="Texture2D" uid="uid://dyospplcnnaaw" path="res://mglass.png" id="15_xopdb"]
+[ext_resource type="Script" path="res://hint.gd" id="16_3xkvj"]
+[ext_resource type="Script" path="res://hint_list.gd" id="17_auuyq"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -201,6 +203,12 @@ scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("15_xopdb")
 texture_pressed = ExtResource("15_xopdb")
 texture_hover = ExtResource("15_xopdb")
+
+[node name="Hint" type="Node" parent="."]
+script = ExtResource("16_3xkvj")
+
+[node name="HintList" type="Node" parent="Hint"]
+script = ExtResource("17_auuyq")
 
 [connection signal="pressed" from="MenuButton" to="MenuButton" method="_on_menu_button_pressed"]
 [connection signal="timeout" from="Countdown/Timer" to="." method="_on_timer_timeout"]
