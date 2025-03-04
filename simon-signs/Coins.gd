@@ -3,7 +3,7 @@ extends Node
 @onready var tracker = $CoinCounter
 @onready var display = $CoinCount
 @onready var display_text = display.text
-@onready var label=$"../UI/HintButtonPanel"
+@onready var label=$"../UI/HintButtonPanel/HintDisplayText"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	display_text = tracker.get_amount()

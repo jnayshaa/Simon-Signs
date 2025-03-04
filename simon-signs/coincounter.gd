@@ -18,3 +18,5 @@ func get_amount() -> String:
 func _on_hint_button_pressed():
 	print ("Hint button pressed")
 	coins2._decrease_coin_amount()
+	if gainedcoins>=10:
+		label.visible=true
