@@ -4,6 +4,9 @@ extends Node
 @onready var display = $CoinCount
 @onready var display_text = display.text
 @onready var label=$"../UI/HintButtonPanel"
+@onready var label_text = $"../UI/HintButtonPanel/HintDisplayText"
+@onready var hint = $"../Hint"
+@onready var question = $"../Question"
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	display_text = tracker.get_amount()
@@ -27,6 +30,9 @@ func _decrease_coin_amount():
 	if tracker.gainedcoins >= 10:
 		tracker.add_coins(-10)
 		label.visible=true
+		hint._get_hint(question.get_prompt())
+		label_text.set_text(hint.get_hint_text())
+		
 		_get_coin_amount()
 		print("Label is visible")  
 	else:

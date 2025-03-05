@@ -1,11 +1,11 @@
 extends Node
 
 @onready var HintList = $HintList
-#@onready var hint = the path to the lable goes here
-#@onready var hint_text = hint.text
+@onready var hint = $"../UI/HintButtonPanel/HintDisplayText"
+@onready var hint_text = hint.text
 
 func _get_hint(question : String):
-	hint_text = HintList.get_hint()
+	hint_text = HintList.get_hint(question)
 	
 	
 func get_hint_text() -> String:

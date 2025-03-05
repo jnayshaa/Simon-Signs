@@ -1,6 +1,6 @@
 extends Node
  
-@onready var gainedcoins = 0
+@onready var gainedcoins = 50
 @onready var coins2=$".."
 @onready var label=$"../../UI/HintButtonPanel"
 # Called when the node enters the scene tree for the first time.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=21 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
@@ -14,7 +14,7 @@
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
 [ext_resource type="Script" path="res://countdown.gd" id="10_4jesu"]
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
-[ext_resource type="PackedScene" uid="uid://bxdbm2t7fev3g" path="res://pause_menu.tscn" id="14_cwvae"]
+[ext_resource type="PackedScene" uid="uid://sgv7g6qv4sxv" path="res://pause_menu.tscn" id="14_cwvae"]
 [ext_resource type="Texture2D" uid="uid://dyospplcnnaaw" path="res://mglass.png" id="15_xopdb"]
 [ext_resource type="Script" path="res://hint.gd" id="16_3xkvj"]
 [ext_resource type="Script" path="res://hint_list.gd" id="17_auuyq"]
@@ -86,7 +86,6 @@ offset_top = 15.0
 offset_right = 90.0
 offset_bottom = 38.0
 theme_override_fonts/font = ExtResource("4_mx7fl")
-text = "Hints"
 
 [node name="MenuButton" type="MenuButton" parent="."]
 anchors_preset = -1
