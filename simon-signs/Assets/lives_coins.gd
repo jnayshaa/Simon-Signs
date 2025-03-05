@@ -10,7 +10,7 @@ var lives = 4 # Start with 4 lives
 @onready var heart4= $HBoxContainer/Control4/heart4
 @onready var CoinCounter= $"../Coins2/CoinCount"
 @onready var GameOverText= $"../GameOverText"
-
+@onready var right_answer_label = $"../Control2"
 #sound effects
 @onready var wrong = $Wrong_ans
 @onready var right= $Right_ans
@@ -29,7 +29,10 @@ func life_lost():
 		#heart4.visible= not heart4.visible
 	
 	if lives == 0:
-		game_over()
+		show_answer() #shows the correct answer
+		await get_tree().create_timer(0.75).timeout
+		right_answer_label.hide()
+		game_over() 
 		await get_tree().create_timer(0.75).timeout  # Wait for 0.75 second
 		get_tree().change_scene_to_file("res://startmenu.tscn")
 		
@@ -49,34 +52,7 @@ func restart():
 	remaining_hearts() #Shows all hearts again
 	CoinCounter.parse_bbcode("0") # coins are back to zero
 	
-func sound_effects():
-	#adds the sound effects for the s 
-
-#func _input(event):
-	# Simulating a wrong answer with SPACE key
-	#if event.is_action_pressed("ui_accept"):  # Default is SPACE key
-		#life_lost()
-	#elif event.is_action_pressed("ui_right"):  #if correct answer is entered
-		#right_ans()
-	#if event.is_action_pressed("restart"):  
-		#restart()
-
-
- #Called when the node enters the scene tree for the first time.
-#	pass # Replace with function body.
-
-
- #Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-	#pass
-
-
-
-# Called when the node enters the scene tree for the first time.
-#func _ready() -> void:
-	#pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-	pass
+	
+func show_answer():
+	right_answer_label.show() #makes the label visible
+	

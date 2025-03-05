@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://473sn8lnkdhe"]
+
+[ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_runqk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 4
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 103.0
+offset_right = 176.0
+offset_bottom = 62.0
+color = Color(0.937255, 0.396078, 0.521569, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 282.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_runqk")
+theme_override_font_sizes/font_size = 45
+text = "M"
+horizontal_alignment = 1
+vertical_alignment = 2

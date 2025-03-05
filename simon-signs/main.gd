@@ -7,6 +7,7 @@ extends Node
 @onready var inputfieldbg = $"UI/Input field bg"
 @onready var inputfield = $"UI/Input field bg/Input field"
 @onready var timer = $"Countdown/Timer"
+#onready var answer
 
 func _ready() -> void:
 	pass
@@ -29,6 +30,7 @@ func _incorrect():
 	lives.life_lost()
 	inputfieldbg.red()
 	inputfield.text = ""
+	#answer.visible = true
 
 func hearts_number():
 	if lives.remaining_hearts() == 0:
