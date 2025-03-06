@@ -51,4 +51,5 @@ func _unhandled_input(event : InputEvent) -> void:
 			#incorrect answer function
 func _on_timer_timeout():
 	_incorrect()
+	hintlable.set_visible(false)
 	question._get_new_question()
