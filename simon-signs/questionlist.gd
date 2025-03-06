@@ -29,6 +29,8 @@ var alphabet = [
 	"z" 
 ]
 
+#Store letters that were just asked about. Array? Just one at a time?
+
 func get_prompt() -> String:
 	var word_index = randi() % alphabet.size()
 

@@ -4,6 +4,7 @@ extends Node
 @onready var prompt = $QDisplay
 @onready var prompt_text = prompt.text
 @onready var right_answer_label = $"../Control2/Label"
+@onready var just_asked
 
 
 # Called when the node enters the scene tree for the first time.
@@ -20,7 +21,10 @@ func _get_new_question():
 	prompt_text = QuestionList.get_prompt()
 	#answer.text = prompt_text
 	right_answer_label.text = prompt_text
+	if prompt_text == just_asked:
+		_get_new_question()
 	prompt.parse_bbcode(set_center_tags(prompt_text))
+	just_asked = prompt_text
 	
 func get_prompt() -> String:
 	return prompt_text

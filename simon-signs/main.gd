@@ -8,6 +8,7 @@ extends Node
 @onready var inputfield = $"UI/Input field bg/Input field"
 @onready var timer = $"Countdown/Timer"
 #onready var answer
+@onready var hintlable = $"UI/HintButtonPanel"
 
 func _ready() -> void:
 	pass
@@ -19,7 +20,8 @@ func _correct():
 	inputfieldbg.green()
 	coincounter.add_coins(5)  # Add 5 coins when the answer is correct
 	lives.right_ans()
-	await get_tree().create_timer(0.5).timeout  # Wait for 0.5 second
+	hintlable.set_visible(false)
+	await get_tree().create_timer(0.5).timeout  # Wait for 1 second
 	question._get_new_question()
 	inputfield.text = ""
 	inputfieldbg.pink()  # Change input field color to pink
@@ -31,10 +33,6 @@ func _incorrect():
 	inputfieldbg.red()
 	inputfield.text = ""
 	#answer.visible = true
-
-func hearts_number():
-	if lives.remaining_hearts() == 0:
-		lives.restart()
 
 #Code adapted from Joe Bustamante: "Godot Typing Game Tutorial"
 func _unhandled_input(event : InputEvent) -> void:
@@ -55,4 +53,5 @@ func _unhandled_input(event : InputEvent) -> void:
 		
 func _on_timer_timeout():
 	_incorrect()
+	hintlable.set_visible(false)
 	question._get_new_question()
