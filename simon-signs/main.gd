@@ -27,6 +27,9 @@ func _correct():
 	inputfieldbg.pink()  # Change input field color to pink
 	timer.start() 
 	
+func hearts_number():
+	if lives.remaining_hearts() ==0:
+		lives.restart()
 
 func _incorrect():
 	lives.life_lost()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=23 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
@@ -16,10 +16,10 @@
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
 [ext_resource type="PackedScene" uid="uid://sgv7g6qv4sxv" path="res://pause_menu.tscn" id="14_cwvae"]
 [ext_resource type="Texture2D" uid="uid://dyospplcnnaaw" path="res://mglass.png" id="15_xopdb"]
-[ext_resource type="PackedScene" uid="uid://473sn8lnkdhe" path="res://Scenes/ShowAnswer.tscn" id="16_wclvf"]
-[ext_resource type="Script" path="res://Scenes/show_answer.gd" id="17_ec47p"]
 [ext_resource type="Script" path="res://hint.gd" id="16_3xkvj"]
+[ext_resource type="PackedScene" uid="uid://473sn8lnkdhe" path="res://Scenes/ShowAnswer.tscn" id="16_wclvf"]
 [ext_resource type="Script" path="res://hint_list.gd" id="17_auuyq"]
+[ext_resource type="Script" path="res://Scenes/show_answer.gd" id="17_ec47p"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -237,6 +237,7 @@ offset_top = 298.0
 offset_right = 409.0
 offset_bottom = 298.0
 script = ExtResource("17_ec47p")
+
 [node name="Hint" type="Node" parent="."]
 script = ExtResource("16_3xkvj")
 
