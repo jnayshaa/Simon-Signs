@@ -6,6 +6,7 @@ extends Node
 @onready var lives= $Control
 @onready var inputfieldbg = $"UI/Input field bg"
 @onready var inputfield = $"UI/Input field bg/Input field"
+@onready var hintlable = $"UI/HintButtonPanel"
 
 func _ready() -> void:
 	pass
@@ -17,6 +18,7 @@ func _correct():
 	inputfieldbg.green()
 	coincounter.add_coins(5)  # Add 5 coins when the answer is correct
 	lives.right_ans()
+	hintlable.set_visible(false)
 	await get_tree().create_timer(0.5).timeout  # Wait for 1 second
 	question._get_new_question()
 	inputfield.text = ""

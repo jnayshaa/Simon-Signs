@@ -71,21 +71,23 @@ placeholder_text = "Type your answer here"
 alignment = 1
 
 [node name="HintButtonPanel" type="Panel" parent="UI"]
-visible = false
 layout_mode = 0
 offset_left = 7.0
 offset_top = 157.0
-offset_right = 154.0
-offset_bottom = 197.0
+offset_right = 207.0
+offset_bottom = 237.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_ukeqw")
 
 [node name="HintDisplayText" type="Label" parent="UI/HintButtonPanel"]
 layout_mode = 0
-offset_left = 40.0
-offset_top = 15.0
-offset_right = 90.0
-offset_bottom = 38.0
+offset_left = -2.0
+offset_top = 16.0
+offset_right = 198.0
+offset_bottom = 64.0
 theme_override_fonts/font = ExtResource("4_mx7fl")
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+autowrap_mode = 2
 
 [node name="MenuButton" type="MenuButton" parent="."]
 anchors_preset = -1
