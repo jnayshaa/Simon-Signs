@@ -25,7 +25,7 @@ func _correct():
 	inputfieldbg.pink()  # Change input field color to pink
 
 func _incorrect():
-	lives.lose_life()
+	lives.life_lost()
 	inputfieldbg.red()
 	inputfield.text = ""
 

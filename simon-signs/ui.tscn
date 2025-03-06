@@ -71,6 +71,7 @@ placeholder_text = "Type your answer here"
 alignment = 1
 
 [node name="HintButtonPanel" type="Panel" parent="UI"]
+visible = false
 layout_mode = 0
 offset_left = 7.0
 offset_top = 157.0
