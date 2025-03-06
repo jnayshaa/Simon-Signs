@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=19 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
@@ -15,6 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
 [ext_resource type="PackedScene" uid="uid://bxdbm2t7fev3g" path="res://pause_menu.tscn" id="14_cwvae"]
 [ext_resource type="Texture2D" uid="uid://dyospplcnnaaw" path="res://mglass.png" id="15_xopdb"]
+[ext_resource type="PackedScene" uid="uid://473sn8lnkdhe" path="res://Scenes/ShowAnswer.tscn" id="16_wclvf"]
+[ext_resource type="Script" path="res://Scenes/show_answer.gd" id="17_ec47p"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -201,6 +203,14 @@ scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("15_xopdb")
 texture_pressed = ExtResource("15_xopdb")
 texture_hover = ExtResource("15_xopdb")
+
+[node name="Control2" parent="." instance=ExtResource("16_wclvf")]
+visible = false
+offset_left = 409.0
+offset_top = 298.0
+offset_right = 409.0
+offset_bottom = 298.0
+script = ExtResource("17_ec47p")
 
 [connection signal="pressed" from="MenuButton" to="MenuButton" method="_on_menu_button_pressed"]
 [connection signal="timeout" from="Countdown/Timer" to="." method="_on_timer_timeout"]

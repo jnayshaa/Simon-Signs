@@ -10,7 +10,7 @@ var lives = 4 # Start with 4 lives
 @onready var heart4= $HBoxContainer/Control4/heart4
 @onready var CoinCounter= $"../Coins2/CoinCount"
 @onready var GameOverText= $"../GameOverText"
-
+@onready var right_answer_label = $"../Control2"
 #sound effects
 @onready var wrong = $Wrong_ans
 @onready var right= $Right_ans
@@ -31,7 +31,10 @@ func life_lost():
 		#heart4.visible= not heart4.visible
 	
 	if lives == 0:
-		game_over()
+		show_answer() #shows the correct answer
+		await get_tree().create_timer(0.75).timeout
+		right_answer_label.hide()
+		game_over() 
 		await get_tree().create_timer(0.75).timeout  # Wait for 0.75 second
 		get_tree().change_scene_to_file("res://startmenu.tscn")
 		
@@ -53,3 +56,7 @@ func restart():
 	
 func sound_off():
 	pass
+	
+func show_answer():
+	right_answer_label.show() #makes the label visible
+	
