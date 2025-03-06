@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=25 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
@@ -9,6 +9,7 @@
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
 [ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="4_mx7fl"]
+[ext_resource type="FontFile" uid="uid://c4trwij4yxu4n" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.woff" id="5_aexcu"]
 [ext_resource type="Script" path="res://menu_button.gd" id="5_m7usv"]
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
@@ -25,6 +26,9 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukeqw"]
 bg_color = Color(0.937255, 0.396078, 0.521569, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6s8a7"]
+bg_color = Color(0.647059, 0.439216, 1, 1)
 
 [node name="Main" type="Node"]
 script = ExtResource("1_myw06")
@@ -91,6 +95,25 @@ theme_override_fonts/font = ExtResource("4_mx7fl")
 theme_override_font_sizes/font_size = 16
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[node name="CoinWarning" type="Panel" parent="UI"]
+visible = false
+layout_mode = 0
+offset_left = 6.0
+offset_top = 159.0
+offset_right = 183.0
+offset_bottom = 199.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6s8a7")
+
+[node name="NotEnoughCoins Alert" type="Label" parent="UI/CoinWarning"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 11.0
+offset_right = 177.0
+offset_bottom = 34.0
+theme_override_fonts/font = ExtResource("5_aexcu")
+theme_override_font_sizes/font_size = 16
+text = "Reach ten to unlock!"
 
 [node name="MenuButton" type="MenuButton" parent="."]
 anchors_preset = -1
