@@ -63,7 +63,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_m8jmp")
 text = "Resume"
 script = ExtResource("2_3y85v")
 
-[node name="Button2" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="sound_toggle" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer"]
 custom_minimum_size = Vector2(0, 125)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.988235, 0.717647, 0.141176, 1)
@@ -84,4 +84,5 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_53ky0")
 text = "Quit"
 
 [connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/resume_button" to="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/resume_button" method="_on_resume_pressed"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/sound_toggle" to="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/resume_button" method="_on_sound_toggle_pressed"]
 [connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/quit_button" to="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/resume_button" method="_on_quit_button_pressed"]

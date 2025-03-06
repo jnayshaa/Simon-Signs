@@ -22,7 +22,7 @@ func _correct():
 	question._get_new_question()
 	inputfield.text = ""
 	inputfieldbg.pink()  # Change input field color to pink
-	timer.start()
+	timer.start() 
 	
 
 func _incorrect():
@@ -39,22 +39,18 @@ func _unhandled_input(event : InputEvent) -> void:
 	if event is InputEventKey and not event.is_pressed():
 		var typed_event = event as InputEventKey
 		var key_typed = OS.get_keycode_string(event.key_label)
-		var prompt = question.get_prompt()
-		print(prompt)
-		if key_typed == prompt:
+		
+		# Allow only single-letter alphabetic inputs (A-Z)
+		if key_typed.length() == 1 and key_typed.is_valid_identifier():
+			var prompt = question.get_prompt()
+			print(prompt)
+			if key_typed.to_upper() == prompt.to_upper():  # Case-insensitive comparison
 				_correct()
-		if key_typed != prompt:
+			else:
 				_incorrect()
-		hearts_number()
-		#if event.key_label == KEY_BACKSPACE:  # Correct way to check for Backspace
-				#inputfieldbg.pink()
-		#if current_sign == key_typed (look up string comparsion in GDScript)
-			#correct answer function
-		#if timeer event zero
-			#time up
-			#incorrect answer function
-		# current_sign != key_typed
-			#incorrect answer function
+			hearts_number()
+		
+		
 func _on_timer_timeout():
 	_incorrect()
 	question._get_new_question()
