@@ -7,6 +7,7 @@ extends Node
 @onready var inputfieldbg = $"UI/Input field bg"
 @onready var inputfield = $"UI/Input field bg/Input field"
 @onready var timer = $"Countdown/Timer"
+@onready var right_answer_label = $Control2
 #onready var answer
 @onready var hintlable = $"UI/HintButtonPanel"
 
@@ -35,7 +36,6 @@ func _incorrect():
 	lives.life_lost()
 	inputfieldbg.red()
 	inputfield.text = ""
-	#answer.visible = true
 
 #Code adapted from Joe Bustamante: "Godot Typing Game Tutorial"
 func _unhandled_input(event : InputEvent) -> void:
@@ -51,10 +51,18 @@ func _unhandled_input(event : InputEvent) -> void:
 				_correct()
 			else:
 				_incorrect()
-			hearts_number()
-		
-		
+		hearts_number()
+
+func show_answer():
+	right_answer_label.show() #makes the label visible
+	
 func _on_timer_timeout():
 	_incorrect()
 	hintlable.set_visible(false)
+	show_answer() #shows the correct answer
+	await get_tree().create_timer(0.75).timeout
+	right_answer_label.hide() 
+	await get_tree().create_timer(0.25).timeout
+	inputfieldbg.pink()
 	question._get_new_question()
+	
