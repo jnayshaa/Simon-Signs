@@ -1,9 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://c5v1tfpqipua4"]
+[gd_scene load_steps=14 format=3 uid="uid://c5v1tfpqipua4"]
 
 [ext_resource type="Script" path="res://credits.gd" id="1_mavqo"]
-[ext_resource type="FontFile" uid="uid://bc4dk4qu08j66" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Monospace/PeaberryMono.ttf" id="1_xno64"]
 [ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="2_yqkgg"]
-[ext_resource type="Texture2D" uid="uid://c260opgg1vp64" path="res://Credits.png" id="4_6d452"]
+[ext_resource type="Texture2D" uid="uid://bi0xg2iem228q" path="res://Assets/Blue White Cute Simple Winter Illustration Presentation.jpg" id="3_7r0gf"]
 
 [sub_resource type="Theme" id="Theme_coa5j"]
 
@@ -61,21 +60,11 @@ offset_top = 285.0
 offset_right = 640.0
 offset_bottom = 918.0
 
-[node name="Title" type="Label" parent="MarginContainer"]
-modulate = Color(0.937255, 0.396078, 0.521569, 1)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_fonts/font = ExtResource("1_xno64")
-theme_override_font_sizes/font_size = 36
-text = "CREDITS~
-"
-
 [node name="Button" type="Button" parent="."]
-offset_left = 408.0
-offset_top = 811.0
-offset_right = 598.0
-offset_bottom = 859.0
+offset_left = 440.0
+offset_top = 853.0
+offset_right = 630.0
+offset_bottom = 901.0
 theme = SubResource("Theme_coa5j")
 theme_override_fonts/font = ExtResource("2_yqkgg")
 theme_override_styles/focus = SubResource("StyleBoxFlat_oh4ds")
@@ -89,9 +78,11 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_qa2cd")
 theme_override_styles/normal = SubResource("StyleBoxFlat_n3aq8")
 text = "BACK TO MENU"
 
-[node name="Credits" type="Sprite2D" parent="."]
-position = Vector2(94, 565)
-scale = Vector2(0.460807, 0.429398)
-texture = ExtResource("4_6d452")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="BlueWhiteCuteSimpleWinterIllustrationPresentation" type="Sprite2D" parent="."]
+position = Vector2(94, 544)
+scale = Vector2(0.556771, 0.547685)
+texture = ExtResource("3_7r0gf")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
