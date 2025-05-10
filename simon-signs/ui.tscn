@@ -1,17 +1,19 @@
-[gd_scene load_steps=14 format=3 uid="uid://b8sj5oo7bwwi3"]
+[gd_scene load_steps=16 format=3 uid="uid://b8sj5oo7bwwi3"]
 
 [ext_resource type="Script" path="res://questionlist.gd" id="1_eqeli"]
 [ext_resource type="Script" path="res://main.gd" id="1_myw06"]
 [ext_resource type="Texture2D" uid="uid://56ny5ronvt57" path="res://Assets/coins.png" id="1_ovvsn"]
 [ext_resource type="FontFile" uid="uid://dahyit7jnva3" path="res://Assets/Fonts/Peaberry-Font-v2.0/Peaberry-Font-v2.0/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_r5vhp"]
 [ext_resource type="Texture2D" uid="uid://dv126r7f46hq6" path="res://Assets/pause_menu_icon.png" id="1_r58be"]
-[ext_resource type="Script" path="res://input_field_bg.gd" id="2_usb3l"]
+[ext_resource type="Script" path="res://input_field_bg.gd" id="2_1wg5d"]
 [ext_resource type="FontFile" uid="uid://c013u2ah7s630" path="res://Assets/Fonts/GALLAUDET.ttf" id="2_uusxv"]
 [ext_resource type="Script" path="res://question.gd" id="3_o7jq0"]
+[ext_resource type="Script" path="res://menu_button.gd" id="5_m7usv"]
 [ext_resource type="Script" path="res://Coins.gd" id="8_o1bro"]
 [ext_resource type="Script" path="res://coincounter.gd" id="9_ssju8"]
 [ext_resource type="Script" path="res://countdown.gd" id="10_4jesu"]
 [ext_resource type="PackedScene" uid="uid://bi5lk68325ppp" path="res://Scenes/LivesBar.tscn" id="10_fwi8q"]
+[ext_resource type="PackedScene" uid="uid://bxdbm2t7fev3g" path="res://pause_menu.tscn" id="14_cwvae"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x3w1j"]
 
@@ -31,45 +33,28 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Purple background" type="ColorRect" parent="UI"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.465
-anchor_right = 0.5
-anchor_bottom = 0.465
-offset_left = -412.0
-offset_top = -176.32
-offset_right = 388.0
-offset_bottom = 163.68
+layout_mode = 0
+offset_left = 164.0
+offset_top = 125.0
+offset_right = 964.0
+offset_bottom = 465.0
 color = Color(0.4, 0.176471, 0.568627, 1)
 
 [node name="Input field bg" type="ColorRect" parent="UI"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.488
-anchor_top = 0.798
-anchor_right = 0.488
-anchor_bottom = 0.798
-offset_left = -399.176
-offset_top = -41.104
-offset_right = 399.824
-offset_bottom = 47.896
+layout_mode = 0
+offset_left = 163.0
+offset_top = 476.0
+offset_right = 962.0
+offset_bottom = 565.0
 color = Color(0.937255, 0.396078, 0.521569, 1)
-script = ExtResource("2_usb3l")
+script = ExtResource("2_1wg5d")
 
 [node name="Input field" type="LineEdit" parent="UI/Input field bg"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -400.5
-offset_top = -42.5
-offset_right = 399.5
-offset_bottom = 44.5
-grow_horizontal = 2
-grow_vertical = 2
+layout_mode = 0
+offset_left = -1.0
+offset_top = 2.0
+offset_right = 799.0
+offset_bottom = 89.0
 theme_override_colors/selection_color = Color(1, 0.192157, 0.192157, 1)
 theme_override_colors/font_placeholder_color = Color(0.996078, 0.976471, 0.976471, 1)
 theme_override_fonts/font = ExtResource("1_r5vhp")
@@ -80,30 +65,25 @@ alignment = 1
 
 [node name="MenuButton" type="MenuButton" parent="."]
 anchors_preset = -1
-anchor_left = 0.923
-anchor_top = 0.099
-anchor_right = 0.923
-anchor_bottom = 0.099
-offset_left = -32.292
-offset_top = -24.152
-offset_right = 32.708
-offset_bottom = 23.848
+anchor_left = -0.033
+anchor_right = -0.033
+offset_left = 1069.02
+offset_top = 40.0
+offset_right = 1134.02
+offset_bottom = 88.0
 theme_override_icons/icon = ExtResource("1_r58be")
-toggle_mode = false
+button_pressed = true
+switch_on_hover = true
+script = ExtResource("5_m7usv")
 
 [node name="Text" type="Label" parent="."]
 modulate = Color(0, 0, 0, 1)
 clip_contents = true
 custom_minimum_size = Vector2(50, 25)
-anchors_preset = -1
-anchor_left = 0.491
-anchor_top = 0.123
-anchor_right = 0.491
-anchor_bottom = 0.123
-offset_left = -399.632
-offset_top = -18.704
-offset_right = 0.367981
-offset_bottom = 13.296
+offset_left = 166.0
+offset_top = 61.0
+offset_right = 566.0
+offset_bottom = 93.0
 scale = Vector2(2, 2)
 theme_override_fonts/font = ExtResource("1_r5vhp")
 theme_override_font_sizes/font_size = 32
@@ -118,14 +98,14 @@ script = ExtResource("1_eqeli")
 
 [node name="QDisplay" type="RichTextLabel" parent="Question"]
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.444
-anchor_right = 0.5
-anchor_bottom = 0.444
-offset_left = -343.0
-offset_top = -193.712
-offset_right = 329.0
-offset_bottom = 184.288
+anchor_left = 0.494
+anchor_top = 0.423
+anchor_right = 0.494
+anchor_bottom = 0.447691
+offset_left = -336.088
+offset_top = -180.104
+offset_right = 335.912
+offset_bottom = 181.896
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_uusxv")
@@ -141,15 +121,15 @@ script = ExtResource("8_o1bro")
 script = ExtResource("9_ssju8")
 
 [node name="CoinCount" type="RichTextLabel" parent="Coins2"]
-anchors_preset = -1
-anchor_left = 0.14
-anchor_top = 0.08
-anchor_right = 0.14
-anchor_bottom = 0.08
-offset_left = -73.28
-offset_top = -11.84
-offset_right = 72.72
-offset_bottom = 12.16
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -488.0
+offset_top = -284.0
+offset_right = -342.0
+offset_bottom = -260.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -166,38 +146,50 @@ region_enabled = true
 region_rect = Rect2(0.0740738, -0.740738, 16.5926, 16.8889)
 
 [node name="Control" parent="." instance=ExtResource("10_fwi8q")]
-anchors_preset = -1
-anchor_left = 0.187
-anchor_top = 0.914
-anchor_right = 0.187
-anchor_bottom = 0.914
-offset_left = -215.424
-offset_top = 55.728
-offset_right = -215.424
-offset_bottom = 55.728
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
 grow_vertical = 0
-metadata/_edit_use_anchors_ = true
 
 [node name="Countdown" type="Node" parent="."]
 script = ExtResource("10_4jesu")
 
 [node name="Timer" type="Timer" parent="Countdown"]
-wait_time = 15.0
+wait_time = 31.0
 autostart = true
 
 [node name="CoDisplay" type="RichTextLabel" parent="Countdown"]
 anchors_preset = -1
-anchor_left = 0.937
-anchor_top = 0.951
-anchor_right = 0.937
-anchor_bottom = 0.951
-offset_left = -31.4241
-offset_top = -16.248
-offset_right = 32.5719
-offset_bottom = 15.752
+anchor_right = 0.028
+anchor_bottom = 0.049
+offset_left = 1048.0
+offset_top = 600.0
+offset_right = 1079.74
+offset_bottom = 600.248
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("1_r5vhp")
 theme_override_font_sizes/normal_font_size = 32
 scroll_active = false
 
+[node name="GameOverText" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.0
+offset_top = -49.0
+offset_right = -62.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+size_flags_horizontal = 4
+text = "GAME OVER"
+
+[node name="PauseMenu" parent="." instance=ExtResource("14_cwvae")]
+visible = false
+
+[connection signal="pressed" from="MenuButton" to="MenuButton" method="_on_menu_button_pressed"]
 [connection signal="timeout" from="Countdown/Timer" to="." method="_on_timer_timeout"]
